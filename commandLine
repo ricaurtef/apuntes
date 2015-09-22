@@ -1,0 +1,22 @@
+  Most commonly used characer classes.
+    [:alnum:] Any alphanumeric character
+    [:alpha:] Any alphabetic character
+    [:digit:] Any numeral
+    [:lower:] Any lowercase letter
+    [:upper:] Any uppercase letter
+
+    Examples:
+    [abc]*		    Any file beginning with either a, b, or c
+    backup.[0-9][0-9][0-9]  Any file beginning with backup. followed by
+			    exactly three numerals
+    [[:upper:]]*	    Any file beginning with an uppercase letter
+    [![:digit:]]*	    Any file not beginning with a numeral
+    *[[:lower:]123]	    Any file ending with a lowercase letter or the
+			    numerals 1, 2, or 3
+  Character ranges: if you are coming from another Unix-like environment
+  or have been reading some other books on this subject, you may have
+  encountered the [A-Z] or the [a-z] character range notations. These are
+  traditional Unix notations and worked in older versions of Linux as well.
+  They can still work, but you have to be very careful with them because
+  they will not produce the expected results unless properly configured.
+  For now, you should avoid using them and use character classes instead.
