@@ -1,3 +1,5 @@
+  Extracted from The Linux Command Line, by William E. Shotts, Jr.
+  
   Most commonly used characer classes.
     [:alnum:] Any alphanumeric character
     [:alpha:] Any alphabetic character
