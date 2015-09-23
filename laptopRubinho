@@ -1,0 +1,51 @@
+  Rubén Ricaurte.
+  Guatire, septiembre del 2015.
+
+  No soy un gran escritor, así que disculpas de antemano por mi redacción!
+  Solo quiero producir un pequeño log de los cambios que he efectuado en mi
+  laptop, después de haber decidio adoptar XFCE como entorno de escritorio.
+  No recuerdo todo de momento, así que iré añadiendo lo que vaya llegando a
+  mi mente.
+  
+  1. Estado suspensión trás el cierre de la pantalla.
+    Siempre entraba en suspensión, sin importar la configuración en las
+    opciones de energía. 
+    Gracias a este artículo di con una solución:
+    http://askubuntu.com/questions/362667/xubuntu-13-10-disabling-suspend-on-lid-being-closed
+    1.1 Editar /etc/systemd/logind.conf
+    1.2 Cambiar el valor del parámetro HandleLidSwitch a "ignore": 
+      HandleLidSwitch=ignore
+    1.3 Reiniciar lightdm: service lightdm restart
+  
+  2. Poco atractiva lock screen.
+    Una de las primeras cosas que noté, fue la poco elegante pantalla de
+    bloqueo, sin contar que no conocía la combinación de teclas que la
+    activaba.
+    Después de varias pruebas, me decanté por light-locker para bloquear la
+    pantalla, es simple (pantalla negra) y luego llama a la pantalla de
+    inicio de sesión.
+    Solución:
+    2.1 Borrar xscreesaver (es el paquete por defecto).
+    2.2 Configurar la combinación para bloquear la pantalla.
+      2.2.1 Menú de aplicaciones-> Configuración-> Teclado
+      2.2.2 Pestaña "Atajos de aplicación".
+      2.2.3 Añadir o editar la opción "xflock4" y fijar la combinación:
+      Ctrl + l.
+    2.3 Establecer la aplicación para lock screen.
+      2.3.1 Instalar el paquete light-locker.
+      2.3.2 Editar el archivo /usr/bin/xflock4. Nota: respaldar el
+      original.
+      2.3.3 Añadir "light-locker-command --lock" \. Debe ser la primera
+      línea, no olvidar el backslash. (Una simple lectura del archivo y
+      sabrás donde colocarla :-D)
+      2.3.4 Reiniciar lightdm: service lightdm restart
+
+  3. Personalizar lightdm.
+    No voy extenderme mucho aquí, el artículo que conseguí es bastante
+    explicativo. Solo mencionaré que esto permite cambiar opciones como el
+    background de la pantalla de inicio, posición del cuadro de login,
+    autologin, entre otras.
+    Solución: http://geekland.eu/personalizar-y-configurar-lightdm/
+    Archivos importantes: /etc/lightdm/lightdm-gtk-greeter.conf,
+    /etc/lightdm/lightdm.conf
+
