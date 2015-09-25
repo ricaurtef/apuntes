@@ -1,4 +1,25 @@
   Extracted from The Linux Command Line, by William E. Shotts, Jr.
+
+  Parte I: Learning the Shell comienza nuestra exploración del lenguaje
+  básico de la línea de comando, incluye cosas tales como la estructura de
+  los comandos, navegación del filesystem, edición desde la línea de
+  comando, y encontrar ayuda y documentación de los comandos.
+
+  Parte II: Configuration and the Environment cubre la edición de archivos
+  de configuración que controlan la operación de la computadora desde la
+  línea de comando.
+
+  Parte III: Common Tasks and Essential Toools explora muchas de las
+  ordinarias tareas que son comunmente desempeñadas desde la línea de
+  comandos. Sistemas operativos tipo Unix, como Linux, contienen muchos
+  "clásicos" programas de línea de comando que son usados para llevar a
+  cabo poderosas operaciones sobre los datos.
+
+  Parte IV: Writing Shell Scripts introduce la programación en el shell,
+  una admitida rudimentaria, pero fácil de aprender, técnica para
+  automatizar muchas de las tareas comunes de computación. Aprendiendo la
+  programación en el shell, te familiarizarás con conceptos que pueden ser
+  aplicados a muchos otros lenguajes de programación.
   
   Most commonly used characer classes.
     [:alnum:] Any alphanumeric character
