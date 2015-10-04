@@ -48,4 +48,17 @@
     Solución: http://geekland.eu/personalizar-y-configurar-lightdm/
     Archivos importantes: /etc/lightdm/lightdm-gtk-greeter.conf,
     /etc/lightdm/lightdm.conf
+  
+  4. SD Card.
+    Itentando leer el contenido de la tarjeta microSd de mi teléfono en mi
+    laptop, pude notar que el lector sd tenía un problema. Fui directo a
+    google para buscar ayuda y me encontré que era cuestión de montar el
+    dispositivo. 
+    Ahora bien, el dispositivo no lo listaba 'fdisk', ni podía montarse a
+    través de la gui. Algo que me dio alguna luz, fue ver que através de
+    'lsusb' reconocía la tarjeta, pero por alguna razón no la montaba. Fue
+    entonces que procedí a ver los logs del sistema y me tope con: 'usb
+    1-1.1: firmware: failed to load ene-ub6250/sd_init1.bin (-2)'.
+    Una búsqueda me llevó a que todo era cuestión de instalar el paquete
+    (mil veces recomenado instalar por apt): firmware-linux-nonfree.
 
