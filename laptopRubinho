@@ -62,3 +62,10 @@
     Una búsqueda me llevó a que todo era cuestión de instalar el paquete
     (mil veces recomenado instalar por apt): firmware-linux-nonfree.
 
+  5. Las molestas notificaciones.
+    Cada vez que el reproductor cambia una pista, o alguna aplicación
+    ejecuta algún sonido, se muestra una notificación que me tiene la vida
+    triste! De momento solo he logrado disminuir el tiempo que es mostrada
+    (aunque me gustaría eliminarla de un todo).
+    Solución: Alt + F2 y ejecutar xfce4-notifyd-config y modificar el
+    parámetro "Desaparecer después de:" y ajustar a 1 segundo.
