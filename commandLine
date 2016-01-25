@@ -20,6 +20,9 @@
   automatizar muchas de las tareas comunes de computación. Aprendiendo la
   programación en el shell, te familiarizarás con conceptos que pueden ser
   aplicados a muchos otros lenguajes de programación.
+
+  Shell: es un programa que toma los comandos del teclado y los pasa al
+sistema operativo para que los ejecute.
   
   Most commonly used characer classes.
     [:alnum:] Any alphanumeric character
