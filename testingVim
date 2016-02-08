@@ -12,8 +12,8 @@
 
   - :help nombreComando, mostrará la ayuda sobre un comando en particular
     (abreviaturas del comando son de especial interés).
-  - :set nombreOpcion&, cambia al valor por defecto de una opcion. :set
-    nombreOpcion?, muestra el valor actual de la opcion.
+  - :set nombreOpcion&, cambia al valor por defecto de una opción. :set
+    nombreOpcion?, muestra el valor actual de la opción.
   - :options, ver una lista de TODAS las opciones disponibles.
   - :history, ver historial de comandos ejecutados. Mismo comando + "/"
     mostrará historial de búsquedas. 
@@ -26,20 +26,33 @@
     s (sentences) Frases, palabras delimitadas por puntos.  p (paragraph)
     Párrafo, líneas delimitadas por líneas en blanco.  b (blocks) Para
     paréntesis, texto encerrado entre paréntesis.  B (blocks) Para llaves,
-    texto encerrado entre llaves.
+    texto encerrado entre llaves. 
   - Para incluir o excluir los delimitadores de los objetos usaremos: a
     (artículo indefinido del inglés), incluir el delimitador.  i (inner),
     excluir el delimitador.
+  - Para movernos entre las líneas que son evisibles en pantalla:
+    H Lleva el cursor a la primera línea que se ve en pantalla.
+    M Lleva el cursor a la línea central de la pantalla.
+    L Lleva el cursor a la última línea de la pantalla.
+  - Para movernos a un tanto por ciento del documento usaremos: número +
+    "%". Ej: 45% nos llevaría a la línea que representa el 45% del
+    documento.
   - Búsqueda de caracteres en la línea:
     f (find) Buscará la aparación en la línea del caracter que sea tecleado
     después de él. Ej: f3h. Buscará la tercera "h" que aparezca en la
     línea. F hará la búsqueda en sentido contrario.
     t (to) Similar a f, con la salvedad que "f" coloca el cursor encima del
     caracter buscado, mientras que "t" lo posiciona en el caracter
-    inmediatamente anterior.
+    inmediatamente anterior. T hará la búsqueda en sentido contrario.
+    ";" busca hacia adelante y "," busca hacia atrás.
   - Caraceteres que son pares: Con la opción "matchpairs (mps)" se definen los
     caracteres que se quieran respondan al comando "%".  Ej: set mps+=<:> .
     Para incluir los pares de	Tags HTML.
+  - Scroll:
+    AvPag = Ctrl d
+    RePag = Ctrl u
+    Ctrl y scroll up línea a línea.
+    Ctrl e scroll down línea a línea.
   - Búsqueda de palabras:
     # Para buscar hacia atrás las aparaciones de la palabra bajo el
     cursor.
