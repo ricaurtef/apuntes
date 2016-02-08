@@ -1,0 +1,101 @@
+  LISTA DE POSIBLES OPCIONES PARA EL .vimrc
+
+  - Saber en que modo estamos, :set showmode/noshowmode
+  - Mostrar los comandos tecleados, :set showcmd/noshowcmd
+  - Automatically set the indent of a new line, set ai/noai
+  - Desactivar búsqueda circular, :set nowrapscan (nows)
+  - Ancho de texto "textwidth", set tw=75 (o el valor que nos guste)
+  - Softtabstop, :set softtabstop=3 (o el valor que nos guste)
+  - Evitar problemas al guardar, :set writebackup
+
+  SÍNTESIS
+
+  - :help nombreComando, mostrará la ayuda sobre un comando en particular
+    (abreviaturas del comando son de especial interés).
+  - :set nombreOpcion&, cambia al valor por defecto de una opcion. :set
+    nombreOpcion?, muestra el valor actual de la opcion.
+  - :options, ver una lista de TODAS las opciones disponibles.
+  - :history, ver historial de comandos ejecutados. Mismo comando + "/"
+    mostrará historial de búsquedas. 
+  - La línea de comandos posee autocompletado sensible al contexto.
+    Tecleando un comando o un nombre de fichero, la tecla TAB completará el
+    nombre.  Pulsando sucesivas veces TAB ira cambiándose el nombre que nos
+    ofrece.  Pulsando CTRL-D, veremos cuantas posibilidades hay.
+  - :gq, activa el reajuste de los saltos de línea.
+  - Objetos de texto: w (words) Palabras, texto entre caractéres no-letras.
+    s (sentences) Frases, palabras delimitadas por puntos.  p (paragraph)
+    Párrafo, líneas delimitadas por líneas en blanco.  b (blocks) Para
+    paréntesis, texto encerrado entre paréntesis.  B (blocks) Para llaves,
+    texto encerrado entre llaves.
+  - Para incluir o excluir los delimitadores de los objetos usaremos: a
+    (artículo indefinido del inglés), incluir el delimitador.  i (inner),
+    excluir el delimitador.
+  - Búsqueda de caracteres en la línea:
+    f (find) Buscará la aparación en la línea del caracter que sea tecleado
+    después de él. Ej: f3h. Buscará la tercera "h" que aparezca en la
+    línea. F hará la búsqueda en sentido contrario.
+    t (to) Similar a f, con la salvedad que "f" coloca el cursor encima del
+    caracter buscado, mientras que "t" lo posiciona en el caracter
+    inmediatamente anterior.
+  - Caraceteres que son pares: Con la opción "matchpairs (mps)" se definen los
+    caracteres que se quieran respondan al comando "%".  Ej: set mps+=<:> .
+    Para incluir los pares de	Tags HTML.
+  - Búsqueda de palabras:
+    # Para buscar hacia atrás las aparaciones de la palabra bajo el
+    cursor.
+    * Para buscar hacia adelante las aparacioens de la palabra bajo el
+    cursor.  nowrapscan (nows) Para evitar la búsqueda circular de
+    palabras.
+
+
+
+
+  Testing El comando (ejecucion inmediata) "daw" borra toda una palabra.
+  Test: Rubén Alberto Ricaurte Francia. partir de aqui...  Otra prueba de los
+  limitadores de objetos de texto, "yib" para copiar una frase sin el
+  paréntesis.  Test: (Esta es una línea de prueba con su limitador) Esta es
+  una línea de prueba con su limitador (Esta es una línea de prueba con su
+  limitador)
+
+  Uso de registro especiales del sistema: El nombre del archivo es:
+  Documentos/testingVim	("%p o P o gp o gP) Tengo aproximadamente: 92400
+  ("=operacion aritmetica y luego pegar) Última cadena de búsqueda: ver
+  historial\_s	("/p o P o gp o gP)
+
+  Documentos/testingVim 3 Venezuela Ruben Ricaurte 3 Francia Alberto Francia
+  Esta debería terminar siendo una línea excesivamente larga, con el
+  propósito de probar la variable "textwidth", que determina el ancho de la
+  en el documento y, excedido este, generar un verdadero salto de línea.
+
+		       MI PRIMER TÍTULO CENTRADO EN VIM
+    *)Esta es una línea de prueba.
+    *)Esta es otro línea de prueba.
+    *)Esta es la última línea de prueba.
+    *)Estas líneas fueron insertadas para probar los comando "I, A, c y C" de
+    la selección por bloques, del modo visual.
+    Hello everybody! I am here today, in front of you all, just to say...
+
+
+
+
+  Brasil
+  Argentina
+  Chile
+  Paraguay
+  Peru
+  Venezuela
+  Este es el producto de realizar: read!ls -l [eE]*
+-rw-r----- 1 rubinho rubinho 70333 mar 12  2015 Ejemplo.jpg
+-rw-r--r-- 1 rubinho rubinho  1098 ago 31 22:32 englishHomework
+-rw-r--r-- 1 rubinho rubinho 33618 may 11  2015 estructurasIngles.pdf
+-rw-r--r-- 1 rubinho rubinho  1098 ago 31 22:32 englishHomework
+-rw-r--r-- 1 rubinho rubinho 33618 may 11  2015 estructurasIngles.pdf
+
+
+-rw-r--r-- 1 rubinho rubinho 18817 sep 30 08:58 autorizacionTarjetaAlimentacion.odt
+
+apuntes:
+total 12
+-rw-r--r-- 1 rubinho rubinho 2339 sep 24 23:01 commandLine
+-rw-r--r-- 1 rubinho rubinho 3693 ene 19 22:47 englishVocabulary
+-r--r-- 1 rubinho rubinho 3643 nov 28 21:04 laptopRubinho
