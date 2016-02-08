@@ -1,0 +1,8 @@
+  Resumen: 
+
+  Vim es un "editor modal". Se interpretará lo que se pulse, de acuerdo al
+  modo en que se encuentre el editor.
+
+  Los modos son fundamentales son 2: modo normal (aka modo comando) y modo
+  inserción. Los otros modos pueden ser considerados secundarios: modo
+  línea de comandos, modo visual, modo de selección y modo reemplazo.
