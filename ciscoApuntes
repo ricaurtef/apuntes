@@ -1,5 +1,20 @@
 Capítulo 1.
-Red humana: comunidades de personas en línea intercambiando información.
+ 
+"Entre todos los elementos esenciales para la existencia humana, la
+necesidad de interactuar está justo después de la necesidad de sustentar la
+vida."
+
+Las redes conectan a las personas y promueven la comunicación libre.
+Gracias a los avances en las tecnologías de red, podemos crear un mundo en
+el que las fronteras, distancia geográfica y las limitaciones físicas se
+vuelven cada vez en obstáculos más fáciles de sortear.
+
+El futuro nos depara el internet de todo (IdT). El IdT reúne personas,
+procesos, datos, para transformar la información en acciones que crean
+nuevas capacidades y proporcionan experiencias más enriquecedoras para
+personas, empresas y el mundo en general.
+
+Red humana: comunidades de personas en línea intercambiando ideas e información.
 La red humana se enfoca en el impacto que tienen Internet y las redes en las personas y las empresas.
 
 Las redes cambiaron la forma en que aprendemos:
@@ -10,3 +25,71 @@ En la actualidad las redes presentan las siguientes características:
 2. Proporcionan video a petición.
 3. Dan lugar a espacios de aprendizaje cooperativos.
 4. Permiten el aprendizaje móvil.
+
+Las redes cambiaron la forma en que nos comunicamos:
+Algunas de las nuevas formas de comunicación actuales que se apoyan en las
+redes son:
+1. Mensajería de texto/IM (Instant Messaging).
+2. Medios sociales.
+3. Herramientas de colaborción.
+4. Weblogs (blogs).
+5. Wikis.
+6. Podcasting.
+7. Intercambio de archivos P2P.
+
+Las redes cambiaron la forma en que trabajamos:
+En el ámbito laboral, las redes pasaron de un medio para registrar datos
+internos, información de clientes y los sistemas de pago de nómina a
+permitir la incorporación de muchos servicios como el correo electrónico,
+vídeo, mensajería y telefonía.
+
+Las redes cambiaron la forma en que nos entretenemos:
+La adopción generalizada de internet por parte de las industrias de viaje y
+entretenimiento ha aportado nuevas maneras de recreación, sin importar la
+ubicación geográfica. Hoy día podemos disfrutar del nuevo material de
+nuestros artistas favoritos en línea o incluso descargarlo a nuestro PC,
+leer un libro, entrar a comunidades de juegos en línea y un sin fin de
+cosas más!
+
+
+Provisión de recursos en una red
+Hosts o dispositivos finales: todas las PC conectadas a una red que
+participan directamente en las comunicaciones. Los hosts en las redes
+modernas, pueden funcionar como clientes, servidores o ambos. El software
+instalado en la computadora determina cuál rol cumple la PC.
+
+Servidor: host con algún software instalado que le permite proporcionar
+información (servicios) a otros hosts en la red. Cada servicio requiere un
+software de servidor diferente. Un servidor puede prestar servicios a uno
+varios clientes simultáneamente.
+
+Clientes: hosts con algún software que le permite solicitar información a
+un servidor y mostrar la información obtenida. Debe haber un software
+cliente por cada servicio requerido.
+
+Redes P2P (Peer to peer):
+Ventajas:
+1. Configuración sencilla.
+2. Menor complejidad.
+3. Bajo coste (No requiere dispositivos de red ni servidores dedicados)
+4. Se utilizan para tareas sencillas como compartir archivos o impresión de
+ficheros.
+
+Desventajas:
+1. La administración no es centralizada.
+2. No son tan seguras.
+3. No son escalables.
+nota: "escalabilidad es la propiedad deseable de un sistema, una red o un
+proceso, que indica su habilidad para reaccionar y adaptarse sin perder
+calidad, o bien manejar el crecimiento continuo de trabajo de manera
+fluida, o bien para estar preparado para hacerse más grande sin perder
+calidad en los servicios ofrecidos."
+4. Cada equipo puede actuar como cliente y servidor, lo que afecta el
+rendimiento de la red.
+
+
+Componentes de las redes
+La infrastructura de red contiene tres categorías de componentes de red:
+1. Dispositivos.
+2. Medios.
+3. Servicios.
