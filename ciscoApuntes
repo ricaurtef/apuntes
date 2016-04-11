@@ -14,28 +14,28 @@ procesos, datos, para transformar la información en acciones que crean
 nuevas capacidades y proporcionan experiencias más enriquecedoras para
 personas, empresas y el mundo en general.
 
-Red humana: comunidades de personas en línea intercambiando ideas e información.
+Red Humana: comunidades de personas en línea intercambiando ideas e información.
 La red humana se enfoca en el impacto que tienen Internet y las redes en las personas y las empresas.
 
 Las redes cambiaron la forma en que aprendemos:
 Por qué cambiaron la forma en qué aprendemos? Al revolucionar la "Comunicación", uno de los componentes básicos de la educación; otros elementos que destacan son: la colaboración y compromiso.
 
 En la actualidad las redes presentan las siguientes características:
-1. Admiten la creación de aulas virtuales.
-2. Proporcionan video a petición.
-3. Dan lugar a espacios de aprendizaje cooperativos.
-4. Permiten el aprendizaje móvil.
+a. Admiten la creación de aulas virtuales.
+b. Proporcionan video a petición.
+c. Dan lugar a espacios de aprendizaje cooperativos.
+d. Permiten el aprendizaje móvil.
 
 Las redes cambiaron la forma en que nos comunicamos:
 Algunas de las nuevas formas de comunicación actuales que se apoyan en las
 redes son:
-1. Mensajería de texto/IM (Instant Messaging).
-2. Medios sociales.
-3. Herramientas de colaborción.
-4. Weblogs (blogs).
-5. Wikis.
-6. Podcasting.
-7. Intercambio de archivos P2P.
+a. Mensajería de texto/IM (Instant Messaging).
+b. Medios sociales.
+c. Herramientas de colaborción.
+d. Weblogs (blogs).
+e. Wikis.
+f. Podcasting.
+g. Intercambio de archivos P2P.
 
 Las redes cambiaron la forma en que trabajamos:
 En el ámbito laboral, las redes pasaron de un medio para registrar datos
@@ -87,9 +87,103 @@ calidad en los servicios ofrecidos."
 4. Cada equipo puede actuar como cliente y servidor, lo que afecta el
 rendimiento de la red.
 
-
 Componentes de las redes
-La infrastructura de red contiene tres categorías de componentes de red:
-1. Dispositivos.
-2. Medios.
-3. Servicios.
+La infraestructura de red es la plataforma que proporciona el canal estable
+y confiable por el cual se producen ls comunicaciones.
+
+La infraestructura de red se divide en utres categorías:
+1. Dispositivos: son los elementos físicos o hardware de la red.
+1.1 Dispositivos finales: la interfaz entre el usuario y la red de comunicación
+subyacente. Ejemplos: PC, impresoras de red, teléfono VoIP, cámaras de
+seguridad.
+1.2 Dispositivos intermediarios: los encargados de interconectar
+dispositivos finales.
+Ejemplos de dispositivos intermediarios:
+a. Acceso a la red (switches y puntos de acceso inalámbrico)
+b. Internetworking (routers)
+c. Seguridad (firewalls)
+Los procesos que se ejecutan en los dispositivos intermediarios realizan
+las siguientes funciones:
+a. Volver a generar y transmitir las señales de datos.
+b. Conservar información acerca de las rutas que existen a través de la red
+y de internetwork.
+c. Notificar a otros dispositivos de los errores y las fallas de
+comunicación.
+d. Dirigir los datos a lo largo de rutas alternativas cuando hay una falla
+en el enlace.
+e. Clasificar y dirigir los mensajes según las prioridades de calidad de
+servicio (QoS, Quality of Service)
+f. Permitir o denegar el flujo de datos de acuerdo con la configuración de
+seguridad.
+nota: los dispositivos intermediarios dirigen la ruta de los datos, pero no
+generan contenido de datos ni lo modifican.
+
+2. Medios: proporcionan el canal por donde viaja el mensaje desde el origen
+hasta el destino.
+Las redes modernas utilizan principalmente 3 tipos de medios para
+interconectar dispositivos:
+a. Hilos metálicos dentro de cables.
+b. Fibra de vidrio o plástico (cable de fibra óptica)
+c. Transmisión inalámbrica.
+Los criterios para elegir medios de red son los siguientes:
+a. La distancia por la que los medios pueden transportar una señal
+correctamente.
+b. El entorno en el que se instalarán los medios.
+c. La cantidad de datos y la velocidad a la que se deben trasmitir.
+d. El costo del medio y de la instalación.
+
+3. Servicios: programas de ordenador ejecutados en segundo plano y no
+interactivos (no requiere el control de un usuario)
+
+
+Las infraestructuras de red pueden variar en gran medida en los siguientes
+aspectos:
+a. El tamaño del área que abarcan.
+b. La cantidad de usuarios conectados.
+c. La cantidad y los tipos de servicios disponibles.
+
+Tipos de infraestructuras de red más comunes:
+a. Red de área local (LAN): son infraestructuras de red que proporcionan
+acceso a los usuarios y a los dispositivos finales en un área geográfica
+pequeña.
+
+b. Red de área extensa (WAN): son infraestructuras de red que proporcionan
+acceso a otras redes en un área geográfica extensa.
+
+c. Red de área metropolitana (MAN): son infraestructuras de red que abarcan
+un área física mayor que la de una LAN pero menor que la de una WAN (por
+ejempo, una ciudad). 
+
+d. LAN inalámbrica (WLAN): son similares a la LAN, sólo que interconectan
+de forma inalámbrica a los usuarios y los extremos en un área geográfica
+pequeña.
+
+e. Red de área de almacenamiento (SAN, Storage area network): son
+infraestructuras de red diseñadas para admitir servidores de archivos y
+proporcionar almacenamiento, recuperación y replicación de datos. Estas
+incluyen los servidores de tecnología avanzada, matrices de varios discos
+(denominadas "bloques") y la tecnología de interconexión de canal de fibra.
+
+
+Red confiable
+A medida que las redes evolucionan, descubrimos que existen 4
+características básicas que las arquitecturas subyacentes necesitan para
+cumplir con las expectativas de los usuarios:
+a. Tolerancia a fallas.
+b. Escalibilidad.
+c. Calidad de servicio (QoS).
+d. Seguridad.
+Existen dos tipos de problemas de seguridad de red que se deben tratar:  la
+seguridad de la infraestructura de red y la seguridad de la información.
+Para alcanzar los objetivos de seguridad de red, hay  tres requisitos
+principales:
+a. Asegurar la confidencialidad: la confidencialidad de los datos se
+refiere a que solamente los destinatarios deseados y autorizados pueden
+acceder a los datos y leerlos.
+b. Mantener la integridad de la comunicación: se relaciona con tener la
+seguridad de que la información no se alteró durante la transmisión desde
+el origen hasta el destino.
+c. Asegurar la disponibilidad: se relaciona con tener la seguridad de que
+los usuarios autorizados contarán con acceso a los servicios de datos en
+forma confiable y oportuna.
+
