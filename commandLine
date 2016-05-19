@@ -46,3 +46,119 @@ sistema operativo para que los ejecute.
   They can still work, but you have to be very careful with them because
   they will not produce the expected results unless properly configured.
   For now, you should avoid using them and use character classes instead.
+
+  EXPRESIONES REGULARES
+
+  Definición: son notaciones simbólicas usadas para identificar patrones de
+  texto.
+  El principal programa para trabajar con Expresiones Regulares es: grep
+  (Global Regular Expression Print).
+  Grep sintaxis: grep [opciones] regex [fichero...]
+  Grep opciones: 
+  -i (Ignorar case. Formato largo: --ignore-case)
+  -v (Invertir coincidencia. Generalmente grep muestra las líneas que
+  contienen una coincidencia. Esta opción produce que grep imprima cada
+  línea que no contiene una coincidencia. Formato largo: --invert-match)
+  -c (Imprime el número de coincidencias o no coincidencias si la opcion -v
+  está también especificada, en vez de las líneas propiamente. Formato
+  largo: --count)
+  -n (Antecede cada línea coincidente con el número de línea dentro del
+  fichero. Formato largo: --line-number)
+  -l (Imprime el nombre de cada archivo que contiene una coincidencia en
+  lugar de las líneas. Formato largo: --files-with-matches)
+  -L (Como -l pero imprime el nombre de los archivos que no tienen
+  coincidencias. Formato largo: --files-without-match)
+  -h (Para búsquedas en múltiples ficheros suprime la salida del nombre de
+  fichero. Formato largo: --no-filename)
+
+  Metacaracteres y literales
+  Los metacaracteres en las expresiones regulares consisten de: 
+  ^ $ . [ ] { } - ? * + ( ) | \
+  utilizados para especificar coincidencias más complejas.
+  Todos los otros caracteres son considerados literales, aunque el
+  backslash es usado en pocos casos para crear metasecuencias, así como
+  permitir a los metacaracteres ser escapados y ser tratados como
+  literales.
+
+  Meta: cualquier caracter.
+  Es representado por el punto (.), el cual es utilizado para coincidir con
+  cualquier caracter. Incuido en un expresión regular, coincidirá con
+  cualquier caracter en la posisición del punto (.). Ejemplo:
+  grep -h '.zip' foo*.txt
+  Meta: anclas.
+  Los símbolos caret (^) y dollar ($) son tratados como "anclas" en las
+  expresiones regulares. Esto significa que la coincidencia ocurre si la
+  expresión regular es encontrada al principio de la línea (^) o al final
+  de la línea ($). Ejemplo:
+  grep -h '^zip' foo*.txt
+  grep -h 'zip$' foo*.txt
+  Meta: expresiones entre corchetes y clases de caracteres.
+  Podemos coincidir un solo caracter de un conjunto especificado de
+  caracteres usando expresiones entre corchetes. Con expresiones entre
+  corchetes, podemos especificar un conjunto de caracteres (incluso
+  caracteres que de otra forma serían interpretados como metacaracteres) a
+  coincidir. Ejemplo:
+  En este ejemplo, usando un conjunto de dos caracteres, coincidiremos
+  cualquier línea que contenga la cadena bzip o gzip.
+  grep -h '[bg]zip' foo*.txt
+  Un conjunto puede contener cualquier número de caracteres, y los
+  metacaracteres pierden su significado especial cuando están entre
+  corchetes. Hay dos casos en que los metacaracteres tienen un significado
+  distinto dentro de corchetes. El primero es el caret (^) el cual es usado
+  para indicar negación; el segundo es el guíon (-) el cual es usado para
+  indicar un rango de caracteres.
+    Negación
+    Si el primer caracter en una expresión entre corchetes es el caret (^),
+    los caracteres restantes son considerados como un conjunto que no debe
+    estar presente en la posición del caracter dada. Ejemplo:
+    grep -h '[^bg]zip' foo*.txt
+    Rango de caracteres tradicional
+    grep -h '[A-Z]' foo*.txt
+    Cualquier rango de caracteres puede ser expresado de esta manera,
+    incluyendo múltiples rangos como la siguiente expresión, la cual
+    coincidirá todos los nombres de ficheros que empiecen con letras y
+    números:
+    grep -h '^[A-Za-z0-9]' foo*.txt
+    Para que el guíon sea tratado como tal y no de manera especial, basta
+    con ponerlo como el primer caracter de la expresión:
+    grep -h '[-AZ]' foo*.txt
+    esto coincidira con cualquier nombre de archivo que contenga un guión,
+    una letra A o una letra Z.
+
+  POSIX Básicas vs Extendidas Expresiones Regulares.
+  POSIX divide las Expresiones Regulares en Básicas (BRE) y Extendidas
+  (ERE) de acuerdo al uso de los metacaracteres. Para las BRE tenemos: ^ $
+  . [ ] * (todos los demás se consideran literales). Para las ERE tenemos: ( ) { } ? + |.
+  Dato curioso en las BRE los metacaracteres () {} son tratados como tal,
+  si van precedido de un backslash, mientras que en las ERE cualquier
+  metacaracter es tratado como un literal si es escapado. 
+  Extended Regular Expressions
+    Alternación
+    Es la utilidad que permite a una coincidencia ocurrir de entre un
+    conjunto de expresiones. Una expresión entre corchetes permite a un
+    simple caracter coincidir de un conjunto de caracteres, la alternación
+    permite coincidencias de un conjunto de cadena de caracteres o otro
+    expresión regular. Ejemplo:
+    echo "AAA" | grep -E 'AAA|BBB'
+    Aquí vemos la expresión regular 'AAA|BBB', la cual significa "coincide
+    la cadena AAA o la cadena BBB. Nótese que al ser esta una
+    característica extendida, se ha añadido la opcón -E. 
+    La alternación no está límita a dos opciones, veamos dos ejemplos más:
+    echo "CCC" | grep -E 'AAA|BBB|CCC'
+    grep -Eh '^(bz|gz|zip)' foo*.txt
+    En este último ejemplo, para que la alternación sea interpretada
+    correctamente (coincidir con bz, gz o zip al principio de la cadena),
+    es necesario encerrar la expresión entre (). Sin el uso de los
+    paréntesis: grep -Eh '^bz|gz|zip' foo*.txt, se leería como cualquier
+    coincidencia que tenga bz al principio, o contenga gz o contenga zip.
+    Cuantificadores
+    Las ERE tienen varias maneras de especificar el número de veces que un
+    elemento es coincidido.
+    ?- Coincide un elemento cero o una vez: Este cunatificador significa,
+    en efecto, "Haz el elemento precedente opcional".
+    *- Coincide un elemento cero o más veces: El * es usado para denotar un
+    elemento opcional, sin embargo, a diferencia del ?, el ítem puede
+    ocurrir cualquier número de veces, no solo una vez.
+    +- Coincide un elemento una o más veces: El + metacaracter es muy
+    parecido a *, excepto que el requiere al menos una instancia de un
+    elemento precedente.
