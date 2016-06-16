@@ -1,8 +1,41 @@
   Resumen: 
 
-  Vim es un "editor modal". Se interpretará lo que se pulse, de acuerdo al
-  modo en que se encuentre el editor.
+  · Activar modos de vim:
+    - 'Esc' activa modo normal. También sirve para anular la introducción de
+      un comando y, en general, para interrumpir la ejecución de una
+      acción.
+    - Modo de inserción
+      'i' activa el modo de inserción y deja el cursor donde estaba.
+      'I' el cursor se lleva al principio de la línea actual.
+      'a' el cursor se desplaza un carácter a la derecha.
+      'A' el cursor se desplaza al final de la línea actual.
+      'o' Se inserta una línea en blanco bajo la actual, y el cursor es
+      llevado al principio de esta.
+      'O' Se inserta una línea en blanco sobre la actual, y el cursor es
+      llevado al principio de esta.
+    - ':' activa el modo línea de comandos.
+    - Modo visual
+      'v' activa el modo visual.
+      'V' la selección es por líneas.
+      'Ctrl v' la selección es por bloques (útil para trabajar con tablas).
+    - 'gh, gH' activa el modo de selección.
+    - 'R' activa el modo de reemplazo.
+    - 'Ins' Desde los modos normal y reemplazo activa el modo de inserción;
+      desde este, activa el modo de reemplazo.
 
-  Los modos son fundamentales son 2: modo normal (aka modo comando) y modo
-  inserción. Los otros modos pueden ser considerados secundarios: modo
-  línea de comandos, modo visual, modo de selección y modo reemplazo.
+  . Fijar opciones de vim:
+    sintaxis: :set nombreOpcion
+      ':set nombreOpcion&' establece el valor por defecto de la opción. 
+      ':set nombreOpcion?' informa el valor actual de la opción.
+    nota: el comando ':options' lista todas las opciones disponibles,
+    agrupadas por materias, para modificarlas con facilidad.  
+    - ':set showmode' saber en que modo estamos.
+    - ':set showcmd' mostrar comandos a medida que se teclean.
+    - ':set matchpairs *'mps'*+=parejaApertura:parejaCierre' para fijar
+      parejas de símbolos que responden al carácter %.
+    - ':set ignorecase/noignorecase' establece si las búsquedas no son o
+      son sensibles a mayúsculas y minúsculas.
+    -':set hlsearch' resalta los resultados de una búsqueda.
+    -':set incsearch *'is'*' activa la búsqueda incremental (realizar la
+    búsqueda conforme vamos tecleando)
+    -':set wrapscan' activa la búsqueda circular. Note: I hate this!!
