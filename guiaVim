@@ -39,3 +39,18 @@
     -':set incsearch *'is'*' activa la búsqueda incremental (realizar la
     búsqueda conforme vamos tecleando)
     -':set wrapscan' activa la búsqueda circular. Note: I hate this!!
+
+  · Notas:
+    #Validar#
+    Palabras separadas por espacios en blanco o salto de líneas: En las
+    búsquedas por palabras la cadena '\_s' significa: un espacio en blanco
+    o un salto de línea. La cadena '\_s\+' significa: uno o más espacios en
+    blanco o saltos de línea.
+
+    Para ver las marcas hechas por los saltos, hay que usar el comando:
+    ':jumps'
+
+    Si no queremos ir exactamente al lugar de la marca, sino que nos
+    conformamos con ir al principio de la línea, en lugar de un acento
+    grave podemos usar: "'a" y nos llevará al principio de la línea en la
+    que se encuentra la marca.
