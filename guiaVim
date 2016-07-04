@@ -23,6 +23,20 @@
     - 'Ins' Desde los modos normal y reemplazo activa el modo de inserción;
       desde este, activa el modo de reemplazo.
 
+  · Objetos
+    - 'w' Próximo principio de palabra.
+    - 'b' Anterior principio de palabra.
+    - 'e' Próximo final de palabra.
+    - 'ge' Anterior final de palabra.
+    nota: los comando W B E gE hacen lo mismo que sus versiones en
+    minúsculas con la salvedad que estos consideran delimitadores de
+    palabras a: espacios, saltos de línea y tabuladores.
+    - '{' Principio de un párrafo.
+    - '}' Final de un párrafo.
+    - '(' Principio de una frase.
+    - ')' Final de una frase.
+    - '|' Va a la primera columna visible en pantalla.
+
   . Fijar opciones de vim:
     sintaxis: :set nombreOpcion
       ':set nombreOpcion&' establece el valor por defecto de la opción. 
@@ -40,7 +54,7 @@
     búsqueda conforme vamos tecleando)
     -':set wrapscan' activa la búsqueda circular. Note: I hate this!!
 
-  · Notas:
+  · Resumen:
     #Validar#
     Palabras separadas por espacios en blanco o salto de líneas: En las
     búsquedas por palabras la cadena '\_s' significa: un espacio en blanco
@@ -54,3 +68,19 @@
     conformamos con ir al principio de la línea, en lugar de un acento
     grave podemos usar: "'a" y nos llevará al principio de la línea en la
     que se encuentra la marca.
+
+    El comando '"*' precediendo los comandos 'p', 'P' o 'y' fuerza que se
+    use el porta-papeles del sistema.
+
+    Para usar un registro simplemente hay que escribir el comando '"',
+    seguido de una letra del alfabeto. Ej: si el comando 'd3ap' borraría 3
+    parráfos y los colocaría en la memoria de intercambio, el comando
+    '"ad3ap' enviaría el contenido al registro 'a'.
+
+    Registros especiales:
+    '%' Nombre del fichero actual.
+    '#' Nombre del fichero alternativo (si lo hay).
+    '/' La última cadena de búsqueda.
+    ':' El último comando de línea de comandos.
+    '_' Agujero negro.
+    '=' Una expresión matemática.

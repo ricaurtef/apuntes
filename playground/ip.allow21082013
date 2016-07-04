@@ -1,0 +1,1376 @@
+127.0.0.1/32
+
+##########################################################################
+### FISCAL ###############################################################
+##########################################################################
+192.168.11.193/32		 #FGR
+192.168.11.194/32		 #FGR
+192.168.13.193/32		 #FRG
+192.168.13.194/32		 #FRG
+192.168.13.165/32		 #Table-Anderson
+192.168.13.166/32		 #Pc-Anderson
+192.168.12.80/32		 #FRG
+192.168.10.160/32		 #VPN-FGR
+
+##########################################################################
+### DESPACHO FGR #########################################################
+##########################################################################
+192.168.10.64/32 		 #lapto ortega luisa
+192.168.9.19/32 		 #ana.celis
+192.168.8.236/32		 #Geraldi-Ferrer
+192.168.9.13/32			 #Gioconda-Gonzalez
+192.168.9.188/32 		 #portatil-fiscal-general
+192.168.9.78/32 		 #Luisa Ortega-Fiscal-General
+192.168.10.119/32 		 #Despacho2
+192.168.8.93/32 		 #Lapto Rugeri
+192.168.11.21/32		 #Rugeri
+192.168.9.119/32		 #gioconda-lapto
+192.168.10.234/32 		 #Beatriz ortega
+192.168.9.200/32		 #tabla FGR
+172.20.15.250/32		 #Gioconda
+192.168.13.40/32		 #Gioconda
+192.168.8.141/32		 #Ana-Celis2
+
+##########################################################################
+### VICE-FISCAL ##########################################################
+##########################################################################
+192.168.9.60/32 		 #vice-fiscal
+192.168.9.59/32 		 #vice
+192.168.10.73/32		 #cel vice
+192.168.9.176/32 		 #asistente
+192.168.11.56/32 		 #asistente-raiza
+192.168.13.79/32 		 #vice-table
+172.20.15.238/32 		 #vice-table
+
+##########################################################################
+### DIRECTORES ###########################################################
+##########################################################################
+192.168.12.204/32		 #Jose-Carpio
+192.168.9.76/32			 #Jose-Francisco-Garcia
+192.168.9.6/32			 #Jose-Antonio-DeSousa
+192.168.13.18/32		 #Joel-Espinoza
+192.168.8.2/32			 #Abigail-Rodriguez
+192.168.12.20/32		 #Yamile-Barreto
+192.168.8.129/32		 #Rafael-Villegas
+192.168.11.144/32		 #Rafael-Villegas
+192.168.11.133/32		 #Rafael-Villegas-Laptop
+192.168.11.199/32		 #Celis-Hernandez
+192.168.9.136/32		 #Celis-Hernandez
+192.168.9.135/32		 #Celis-Hernandez-Laptop
+192.168.11.131/32		 #Andri-Marin
+192.168.8.196/32		 #Carmen-Ramirez
+172.20.12.133/32		 #Marisela-Lucena
+172.20.14.224/32		 #Carlos-Almarza
+172.20.14.190/32		 #Rocio-Gasperi
+172.20.14.245/32		 #Zair-Mundarain
+172.20.12.242/32		 #Zair-Mundarain-Movil
+172.20.12.213/32		 #Patricia-Zambrano
+172.20.14.234/32		 #Desire-Boada
+172.20.15.43/32			 #Andres-Lopez
+172.20.12.195/32		 #Andres-Lopez
+192.198.8.130/32		 #Alexander-Alcella
+192.168.9.13/32			 #Gioconda-Gonzalez
+192.168.9.54/32			 #Gioconda-Gonzalez
+192.168.9.119/32		 #Gioconda-Gonzalez-Laptop
+192.168.9.200/32		 #Gioconda-Gonzalez-Tablet
+192.168.13.105/32		 #Gioconda-Gonzalez-Tablet-2
+192.168.10.18/32		 #Gioconda-Gonzalez-Movil
+192.168.9.74/32			 #Mercedes-Prieto
+192.168.13.82/32		 #Yurima-Gil-Tablet
+192.168.12.100/32		 #Argenia-Santos
+192.168.13.95/32		 #Argenia-Santos-Tablet
+192.168.12.23/32		 #Sikiu-Hernandez
+192.168.11.247/32		 #Zoraida-Plaza
+192.168.8.92/32			 #Angelica-Martinez
+192.168.10.216/32		 #Jesus-Gerardo-Peña
+192.168.10.66/32		 #Indira-Leon
+192.168.12.67/32		 #Genny-Rodriguez
+192.168.8.203/32		 #Rodolfo-Schonemann
+192.168.8.67/32			 #Maria-Eugenia-Rodriguez
+192.168.11.138/32		 #Giovanni-Rionero
+192.168.13.2/32			 #Maria-Berthe
+192.168.9.182/32		 #Jose-Azuaje
+192.168.10.85/32		 #Enrique-Arrieta
+192.168.8.102/32		 #Enrique-Arrieta
+192.168.11.34/32		 #Maria-Falcon
+192.168.10.110/32		 #Maria-Falcon
+192.168.9.84/32			 #Felix-Rios
+192.168.9.161/32		 #Felix-Rios
+192.168.12.189/32		 #Nelson-Mejia
+192.168.9.58/32			 #Nelson-Mejia
+192.168.8.192/32		 #Ginette-Hernandez
+192.168.10.194/32		 #Juan-Tabares
+192.168.8.130/32		 #Alexander-Arcella
+192.168.11.46/32		 #Jonny-Cantillo
+192.168.11.91/32		 #Liliam-Valero
+192.168.9.63/32			 #Eric-Leon
+192.168.10.4/32			 #Alexis-Becerra
+192.168.13.62/32		 #Liliana-Parra
+192.168.8.74/32			 #Evelyn-Abrahan
+192.168.9.111/32		 #Evelyn-Abrahan
+192.168.12.113/32		 #Moira-Canelone
+192.168.11.85/32		 #Beatriz-Pacheco
+192.168.8.57/32			 #Beatriz-Pacheco
+192.168.12.211/32		 #Ana-Fernandez
+192.168.9.75/32			 #Jose-Vasquez
+192.168.9.61/32			 #Angela-Aguilar
+192.168.9.90/32			 #Henry-Rivas
+192.168.12.220/32		 #Henry-Rivas
+192.168.12.201/32		 #Roberto-Madriz
+192.168.9.49/32			 #Jenny-Alfaro
+192.168.12.41/32		 #Simon-Osorio
+192.168.8.146/32		 #Semiramis-Valor
+192.168.8.28/32			 #Pedro-Melendez
+192.168.9.92/32			 #Maria-Vasquez
+172.16.99.153/32		 #Francis-Hernandez
+172.16.107.150/32		 #Milfred
+172.16.107.195/32		 #Zulaima-Guzman
+192.168.8.39/32 		 #Yolanda-Sapiam
+
+##########################################################################
+### DGA ##################################################################
+##########################################################################
+192.168.13.132/32		 #Laptop-DGA-1
+192.168.13.133/32		 #Laptop-DGA-2
+192.168.13.134/32		 #Laptop-DGA-3
+192.168.13.135/32		 #Laptop-DGA-4
+192.168.13.155/32		 #Laptop-DGA
+192.168.13.156/32		 #Laptop-DGA
+192.168.13.157/32		 #Laptop-DGA
+192.168.13.127/32		 #Laptop-DGA
+192.168.13.4/32			 #Laptop-DGA
+192.168.13.138/32		 #Laptop-DGA
+192.168.9.24/32			 #Astherman-Rojas
+
+##########################################################################
+### LICITACIONES Y CONTRATOS #############################################
+##########################################################################
+192.168.11.25/32		 #ana fernandez 
+192.168.9.73/32			 #elizabeth vasquez
+192.168.9.3/32			 #Fabiola-Bocaranda
+192.168.8.220/32		 #Adalkys-LOpez
+192.168.8.221/32		 #Deiry-Plaza
+192.168.8.224/32		 #Jackson-Alviarez
+192.168.8.226/32		 #Judith-Sangronis
+192.168.8.229/32		 #Ruben-Guanchez
+192.168.8.19/32
+192.168.10.74/32	 	 #Infraestructura
+192.168.10.57/32		 #vanesa wever 
+192.168.10.51/32		 #yuli-fagunde
+192.168.10.52/32		 #josefin-bravo
+192.168.9.231/32		 #norelys-marquez
+192.168.10.26/32		 #lizbeth-gil
+192.168.8.44/32			 #jose-gregorio
+192.168.8.212/32 		 #marcia Ledezma
+192.168.8.12/32 		 #Juan Quintero-Infraestructura
+192.168.10.230/32		 #Ana-celis2
+192.168.10.251/32 		 #alejendro-Castillo
+192.168.10.240/32 		 #Caputo
+192.168.9.63/32 		 #Juan-Higuery
+192.168.8.27/32			 
+192.168.9.91/32			 #Wendy-Saez
+192.168.8.138/32 		 #Aura Telleria
+
+##########################################################################
+### TECNOLOGIA ###########################################################
+##########################################################################
+172.30.30.31/32			 #Charles-Berroteran-N
+172.30.30.32/32			 #Iraly-Mujica-N
+172.30.30.33/32			 #Jose-Subero-N
+172.30.30.34/32			 #Geordy-Viloria-N
+172.30.30.35/32			 #Haydan-Pimentel-N
+172.30.30.36/32			 #Erick-Lozada-Pelon
+172.30.30.37/32			 #Laptop-Prueba-3012
+172.30.30.38/32			 #Gladys-Montilla-N
+172.30.30.39/32			 #Arturo-Castro-N
+172.30.30.40/32			 #Randall-Narvaez-N
+172.30.30.41/32			 #Ruth-Materano-N
+172.30.30.42/32			 #Pasante-Tec-N
+172.30.30.43/32			 #Yarol-Lugo-N
+172.30.30.44/32			 #Alejandro-Lares-N
+172.30.30.45/32			 #Luisama-Peralta-N
+172.30.30.46/32			 #Sandra-Marin-N
+172.30.30.47/32			 #Nestor-Carrasquero-N
+172.30.30.48/32			 #Eliana-Diaz-N
+172.30.30.49/32			 #Jesus-Suarez-N
+172.30.30.50/32			 #Danny-Chan-N
+172.30.30.51/32			 #Jesus-Rojas-N
+172.30.30.52/32			 #Edgar-Espinoza-N
+172.30.30.53/32			 #Jesus-Munoz-N
+172.30.30.54/32			 #Lewis-Ramos-N
+172.30.30.55/32			 #Jackson-Figuera-N
+172.30.30.56/32			 #Katherine-Zambrano-N
+172.30.30.57/32			 #Nestor-Collazo-N
+172.30.30.58/32			 #German-Reyes-N
+172.30.30.59/32			 #Erick-Reyes-N
+172.30.30.60/32			 #Beatriz-Chacon-N
+172.30.30.61/32			 #Jossana-Condado-N
+172.30.30.62/32			 #Ruben-Penedo-N
+172.30.30.63/32			 #Laptop-vc-1
+172.30.30.64/32			 #Damelys-Pena-N
+172.30.30.65/32			 #Cesar-Romero-N
+172.30.30.66/32			 #Daniel-Navas-N
+172.30.30.67/32			 #TAC
+172.30.30.68/32			 #JuanC-Oliveros-N
+172.30.30.69/32			 #Jose-Pena-N
+172.30.30.70/32			 #Marvelys-Alejos-N
+172.30.30.71/32			 #Oscar-Montilla
+172.30.30.72/32			 #Felix-Bernabe-N-B
+172.30.30.73/32			 #Kleinder-Blanco-N
+172.30.30.74/32			 #Alejandro-Paredes-N
+172.30.30.75/32			 #Equipo-Andres-PKI
+172.30.30.76/32			 #Virtual-Subero-N
+172.30.30.77/32			 #Mildiana-Wifi-N
+172.30.30.78/32			 #Isaac-Farfan-N
+172.30.30.79/32			 #Virginia-Rojas-N
+172.30.30.80/32			 #Impresora-DC
+172.30.30.81/32			 #Karol-Monsalve
+172.30.30.82/32			 #Ruben-Ricaurte-N
+172.30.30.83/32			 #Impresora-Proyecto
+172.30.30.84/32			 #Piero-Mangialomini-N
+172.30.30.85/32			 #Dionis_Hernandez
+172.30.30.86/32			 #Beatriz-Chacon-VM-VB
+172.30.30.87/32			 #Alejandro-Paredes
+172.30.30.88/32			 #Lapto-andres-pki
+172.30.30.89/32			 #Francis-Fernandez
+172.20.15.179/32		 #HELP DESK
+172.20.15.166/32		 #HELP DESK
+172.20.15.156/32		 #HELP DESK
+172.20.15.171/32		 #JULIO LOPEZ
+172.20.15.155/32		 #YEMAR MELO
+172.20.15.153/32		 #FRANCIS HERNANDEZ
+172.20.15.242/32		 #NESTOR ZAMBRANO
+172.20.15.165/32		 #HELP DESK
+172.20.15.175/32		 #ALEXIS AMESTOY
+172.20.15.174/32		 #CARIDAD TORRES
+172.20.6.171/32			 #RECEPCION
+172.20.15.173/32		 #LUIS VASQUEZ
+172.20.9.112/32			 #ALMACEN SOPORTE
+172.20.15.176/32		 #HIPOLITA VILLARREAL
+172.20.15.152/32		 #SOPORTE
+172.20.15.151/32		 #SOPORTE
+172.20.15.150/32		 #SOPORTE
+172.20.15.177/32		 #JOSE VIELMA
+172.20.15.149/32		 #SOPORTE
+172.20.15.148/32		 #SOPORTE
+172.20.15.178/32		 #SOPORTE
+172.20.15.147/32		 #SOPORTE
+
+##########################################################################
+### ANALISIS Y EVALUACION  DE MEDIOS #####################################
+##########################################################################
+192.168.8.223/32 		 #Maryari-Silva 
+192.168.9.49/32 		 #Mayret Isturriaga
+192.168.9.252/32 		 #Simon Osorio
+192.168.8.14/32 		 #Antonio Afonso
+192.168.8.10/32 		 #Lerida Marin
+192.168.8.149/32		 #Reinaldo Vargas
+192.168.9.224/32		 #Freddy Reyes
+192.168.8.111/32		 #Thais Parra
+192.168.8.115/32		 #Henry Delgado
+192.168.8.23/32			 #Alfaro Jenny
+192.168.9.172/32		 #Alfonsina Alfonzo
+192.168.8.178/32		 #Catherine Paez
+192.168.9.228/32		 #Marisela Paez
+192.168.10.71/32		 #Venecia
+192.168.8.104/32		 #nicolas
+192.168.8.100/32		 #luis corona
+192.168.9.53/32 		 #romulo
+192.168.11.87/32 		 #Catherine Paez
+192.168.12.41/32		 #simon Osoario2
+192.168.11.243/32 		 #Kfalcon
+192.168.12.134/32 		 #Sra Paez
+192.168.8.9/32 			 #Frank
+192.168.11.14/32 		 #Jose-Gonzalez
+192.168.12.138/32		 #jose-batista
+192.168.9.157/32 		 #Jose A Pastran
+192.168.12.140/32 		 #Oswaldo-Mendoza
+192.168.11.167/32 		 #Sandra-Pepe
+192.168.13.67/32 		 #Miguel-Ventura
+192.168.13.68/32		 #Lusviolet-delfin
+192.168.11.17/32		 #Lusviolet-delfin2
+192.168.13.69/32		 #Sonia-Sanchez
+192.168.12.242/32 		 #Sonia-Sanchez2
+192.168.13.70/32		 #Marvelis-cuevas
+192.168.13.71/32		 #Gilberto-Rivero
+192.168.13.72/32		 #Lorena-Tineo
+192.168.13.73/32		 #Antonio Caldera
+192.168.13.74/32		 #Ricardo-Escarone
+192.168.13.75/32		 #Johana-Rodriguez
+192.168.13.76/32		 #Jose-Pastran
+192.168.11.233/32 		 #Anfreina-Espinoza
+192.168.11.70/32 		 #Fran-Salazar
+192.168.8.178/32 		 #Marvelis-Mecia
+
+##########################################################################
+### DIRECCION INFRAESTRUCTURA ############################################
+##########################################################################
+192.168.8.9/32			 #Belkys-Suarez
+192.168.10.2/32 		 #Ezio-Caputto
+192.168.10.3/32 		 #Maritza-Parababi
+192.168.10.4/32 		 #Alexis-Lucena
+192.168.10.5/32 		 #Clarexi-Gonzalez
+192.168.10.104/32		 #Rosa Suarez
+
+##########################################################################
+### DIR. DELITOS COMUNES #################################################
+##########################################################################
+
+##########################################################################
+### DIR. PRESUPUESTO #####################################################
+##########################################################################
+
+##########################################################################
+### SERVICIOS MEDICOS ####################################################
+##########################################################################
+172.16.65.47/32			 #Darelis-Morales-Coordinadora
+172.16.65.28/32			 #Quintin-Aular-Medico-Jefe
+172.16.65.32/32			 #Darelis-Morillo-Secretaria
+
+##########################################################################
+### DIRECCION DE ADMINISTRACION ##########################################
+##########################################################################
+192.168.8.62/32			 #Eloy-Ferandez
+192.168.8.85/32			 #Joe-Primera
+192.168.9.71/32			 #luis-tortabu
+192.168.11.85/32		 #Maria Sanchez
+192.168.13.62/32 		 #Liliam-Parra
+192.168.13.23/32
+192.168.11.196/32
+
+##########################################################################
+### DIRECCION RELACIONES INSTITUCIONALES #################################
+##########################################################################
+192.168.10.149/32		 #Mariela Vega
+192.168.8.146/32		 #Amudarin
+192.168.8.103/32 		 #Harol-Tovar
+192.168.8.23/32 		 #Yalfaro
+192.168.9.227/32 		 #Cristina-Deleon
+192.168.8.128/32 		 #Tahely-Nunez
+
+##########################################################################
+### DIRECCION CONSTITUCIONAL Y CONTENCIOSOS ##############################
+##########################################################################
+192.168.11.247/32		 #sub Zoraida Plaza
+192.168.8.92/32			 #Maria Montesinos 
+192.168.12.228/32 		 #Virginia-Plaz
+
+##########################################################################
+### DIRECCION DERECHOS FUNDAMENTALES #####################################
+##########################################################################
+192.168.10.42/32		 #Maria Berthe de Heredia
+192.168.11.50/32		 #Víctor Arias Revilla
+192.168.8.102/32		 #Enrique-Arrieta
+
+##########################################################################
+### DIRECCION CONTRA LA CORRUPCION #######################################
+##########################################################################
+192.168.9.58/32			 #Nelson  Mejia 
+192.168.12.189/32 		 #Nelson-Mejias2
+192.168.10.216/32		 #Gabriel stagno 
+192.168.13.85/32 		 #Alejandro-Castillo2
+
+##########################################################################
+### DIRECCION CONTRA LAS DROGAS ##########################################
+##########################################################################
+192.168.11.40/32 		 #Yamina-Mercano
+192.168.11.225/32 		 #Carolina-Espupiñan
+
+##########################################################################
+### FISCAL SUPERIOR AMC ##################################################
+##########################################################################
+172.20.12.38/32 		 #Jhoana Mendoza
+
+##########################################################################
+### DIRECCION CONTRA LA DELICUENICA ORGANIZADA ###########################
+##########################################################################
+192.168.11.238/32 		 #Maria Lima
+
+##########################################################################
+### TECNICO CIENTIFICO ###################################################
+##########################################################################
+172.20.14.5/32  		 #DAYSI GARCIA
+172.20.12.93/32			 #PITERLYN LUGO PLASENCIA
+172.20.12.82/32			 #MARIA QUINTERO
+172.20.14.201/32  		 #JAVIER TORRES
+172.20.15.64/32  		 #GISELLE ROMAN RODRIGUEZ
+172.20.15.217/32  		 #NANDY GONZALEZ
+172.20.14.21/32  		 #YUSTHAIRI QUINTERO
+172.20.12.241/32  		 #ELIZABETH PELAY
+172.20.12.13/32			 #JESUS SUAREZ
+172.20.14.28/32			 #FREDDY CHACOA
+172.20.15.189/32  		 #GABRIELA BATISTA
+172.20.12.84/32  		 #ANDRES GARCIA
+172.20.13.6/32  		 #JORGE HOMSI
+172.20.13.100/32  		 #LUSVIC PEREZ
+172.20.12.89/32			 #DENISSER MADRID
+172.20.12.10/32			 #GRISI M. ANGULO BOLIVAR
+172.20.12.96/32			 #LUIS SALAZAR
+172.20.12.90/32			 #VICTOR RIVERO
+172.20.13.161/32  		 #CLAUDIA DI SANTE ZANOTTI
+172.20.12.91/32			 #FISICO COMPARATIVA
+172.20.15.93/32			 #BLANCA SANCHEZ
+172.20.9.151/32			 #MANUEL VEITIA RODRIGUEZ
+172.20.14.18/32			 #ROSA RIVAS DURAN
+172.20.8.171/32			 #MICROSCOPIO 1
+172.20.3.234/32			 #MICROSCOPIO 2
+172.20.15.83/32			 #MANUEL VEITIA (LAPTOP)
+172.20.14.74/32			 #WILFER BENITEZ
+172.20.14.40/32			 #ELVIS BASABE
+172.20.15.79/32			 #OSWALDO BECERRA
+172.20.14.19/32			 #JUAN CARLOS GAMAZA
+172.20.14.15/32			 #TANIA COLMENARES
+172.20.15.80/32			 #ZOILO LUNA TARAZONA
+172.20.14.52/32			 #RUBEN VILLAMIZAR
+172.20.15.76/32			 #EMANUEL VALERA
+172.20.15.185/32  		 #JUAN VILLEGAS
+172.20.14.3/32  		 #JACIR ROMANELLI
+172.20.15.186/32  		 #ESTEFANY RIVERO
+172.20.15.67/32			 #YARIMAR RUIZ
+172.20.5.153/32			 #MAGALY SALAZAR
+172.20.13.5/32  		 #JORGE CASTRO
+172.20.12.218/32  		 #NATHALY GUAIMARE MENDOZA
+172.20.9.70/32  		 #LABORATORIO DE GENETICA FORENSE
+172.20.14.228/32  		 #CHRISTIAN PADRON GARBAN
+172.20.14.6/32  		 #EISET CALZADILLA
+172.20.14.144/32		 #MARIO CAPORALE
+172.20.12.120/32		 #HECTOR PARRA
+172.20.12.79/32  		 #XIOLIS VARGAS
+172.20.6.24/32  		 #NURKY ZAPATA COLMENARES
+172.20.13.180/32  		 #EDDY MOLINA
+172.20.12.92/32  		 #DOUGLAS SOJO
+172.20.6.23/32  		 #RUBEN VOLLAMIZAR (LAPTOP MICROSCOPIO)
+172.20.15.251/32  		 #ANA CEBALLOS
+172.20.15.112/32  		 #YELITZA PEREZ
+172.20.15.28/32  		 #HEIDI MATOS DURAN
+172.20.15.168/32		 #JOSE SOSA
+172.20.14.213/32		 #EDDANY GUZMAN
+172.20.15.16/32  		 #MARINA YASMIN ZERPA
+172.20.14.143/32  		 #JOSE PIÑA
+172.20.14.17/32  		 #ARNALDO QUINTERO
+172.20.15.161/32		 #JORGE FERNANDEZ
+172.20.13.177/32		 #JAVIER HERNANDEZ PICATOSTE
+172.20.15.160/32		 #XAVIER URDANETA GASPERI
+172.20.15.18/32			 #EVELIA HIDALGO
+172.20.15.167/32		 #AQUILES PIRONA
+172.20.13.135/32		 #JUAN QUINTERO
+172.20.14.1/32			 #EDGAR HERNANDEZ
+172.20.15.135/32		 #CARLOS VEGA PABA
+172.20.14.12/32			 #BELISSA MEDINA
+172.20.13.176/32		 #MARY GARCIA
+172.20.14.10/32			 #GEORGE IRIARTE
+172.20.15.17/32			 #MARLENE MENDOZA
+172.20.14.16/32			 #MABEL RADA
+172.20.13.31/32			 #JESUS SULBARAN
+172.20.13.39/32			 #OMAR MARQUEZ
+172.20.13.37/32			 #VICENTE GARCIA
+172.20.13.30/32			 #LESTER LEON
+172.20.14.32/32			 #UBALDO ZORRILLA RAMIREZ
+172.20.13.29/32			 #EMILIO SEGOVIA
+172.20.13.58/32			 #ROBERTO EGAÑEZ
+172.20.13.28/32			 #ALEIDA PERDOMO
+172.20.15.250/32		 #IRIS SOTO
+172.20.14.170/32		 #FRANCIS ORTIZ
+172.20.13.27/32			 #LISANDRO RAMIREZ
+172.20.12.253/32		 #JUDITH FUENTES
+172.20.5.21/32			 #DIXIANA GARCIA
+172.20.14.215/32		 #JOSE BLANCO
+172.20.14.218/32		 #RICHARD BARRIOS
+172.20.14.222/32		 #LARAYSA GUTIERREZ
+172.20.12.87/32			 #CARLOS HERNANDEZ GARCIA
+172.20.14.232/32		 #OSCAR DAVILA GOMEZ
+172.20.7.104/32			 #ADEYAMIL HIDALGO
+172.20.13.126/32		 #SIXBERT RODRIGUEZ
+172.20.14.212/32		 #YENNIFER A. RODRIGUEZ GONZALES
+172.20.12.121/32		 #DANY SANCHEZ
+172.20.15.202/32		 #CARLA FERREIRA
+172.20.14.234/32		 #DESIREE BOADA
+172.20.12.213/32		 #PATRICIA ZAMBRANO
+172.20.14.183/32		 #SANDRA CAIÑA
+172.20.13.247/32		 #KATERINE BORNACHERA
+172.20.12.81/32			 #LISBETTY CORREIA
+172.20.12.80/32			 #ERIK BERNAL
+172.20.5.90/32			 #ALEJANDRO OYARBEZ
+172.20.14.237/32		 #EDWARD HERRERA BIUR
+172.20.12.78/32			 #COORD. ACTUACIONES PERICIALES LAPTOP
+172.20.8.101/32			 #KIMBERLYS RAMIREZ
+172.20.12.33/32			 #LUIS VIVAS
+172.20.12.155/32		 #CLAUDIA CORREA
+172.20.14.35/32			 #ANAIS RODRIGUEZ
+172.20.14.72/32			 #MARISOL BARRIOS
+172.20.9.77/32			 #RAMON MARTINEZ
+172.20.14.69/32			 #ONNITZA MAYORA
+172.20.14.238/32		 #CESAR CARMONA
+172.20.14.70/32			 #GABRIELA ALCALA
+172.20.15.1/32			 #LUIS ALVAREZ
+172.20.14.43/32			 #MELISSA CHIRINOS
+172.20.12.180/32		 #WILMER OLIVEROS
+172.20.14.71/32			 #YUSMARY GUARAMATO
+172.20.14.182/32		 #MARGARET BANDRES
+172.20.14.68/32			 #SIRIA RODRIGUEZ
+172.20.14.66/32			 #LUIS CADENAS
+172.20.15.221/32		 #NEUDY GANDICA
+172.20.13.146/32		 #IRMA PEÑA
+172.20.15.222/32		 #JOSELYN A. VARGAS GOMEZ
+172.20.12.207/32		 #MIGUEL RADA LADJEVIC
+172.20.12.104/32		 #VIRGINIA MONTESINOS HERNANDEZ
+172.20.14.9/32			 #VANESSA J. SALINAS QUEVEDO
+172.20.12.106/32		 #LEONARDO GIL
+172.20.12.100/32		 #ANDREA AZUAJE
+172.20.12.156/32		 #ALBA DIAZ INFANTE
+172.20.15.2/32			 #HEIDI ORENGO
+172.20.14.26/32			 #MARIO GARCIA
+172.20.14.27/32			 #AMADOR URDANETA
+172.20.12.185/32		 #CESAR MORENO
+172.20.15.60/32			 #DIONAL BELLO
+172.20.15.252/32		 #RICHARD BERRIOS
+172.20.14.30/32			 #JESUS BARRIOS
+172.20.9.82/32			 #DAVID CASTILLO
+172.20.14.119/32		 #IBELICE RODRIGUEZ
+172.20.12.83/32			 #DEIVIS SALAZAR
+172.20.15.66/32			 #LUZ MACHADO
+172.20.14.95/32			 #DANAHIS VIVAS
+172.20.15.33/32			 #FITZGERAL ESCALONA
+172.20.14.120/32		 #HENRY GRATEROL
+172.20.14.159/32		 #ROMER RIVAS
+172.20.15.36/32			 #JOHANA CASTILLO
+172.20.15.84/32			 #RICHARD SEIJAS
+172.20.15.14/32			 #JOHAN LINARES CONTRERAS
+172.20.13.208/32		 #REINA ESPINOZA
+172.20.15.169/32		 #AYARIS COLINA
+172.20.9.253/32			 #ODACTSY CONDE
+172.20.7.41/32			 #ROMER RIVAS (LAPTOP)
+172.20.15.73/32			 #PEDRO LEON
+172.20.9.78/32			 #BETSI MESA (LAPTOP1)
+172.20.14.161/32		 #BETSI MESA
+172.20.11.44/32			 #DANIEL SUAREZ
+172.20.8.167/32			 #BETSI MESA (LAPTOP2)
+172.20.1.90/32			 #SERVIDOR FISICO
+172.20.1.91/32			 #SERVIDOR VIRTUALIZADO 1
+172.20.1.92/32			 #SERVIDOR VIRTUALIZADO 2
+172.20.15.198/32		 #KERVIN FALCON
+172.20.14.77/32			 #RICARDO YEPEZ
+172.20.15.90/32			 #JORGE MORALES
+172.20.14.226/32		 #LEXIS GANDICA
+172.20.14.168/32		 #ANA MARIA HERNANDEZ
+172.20.15.154/32		 #YAJAIRA MARTINEZ PEÑALOZA
+172.20.14.236/32		 #SKARLING SERRANO
+172.20.14.101/32		 #TANIA ALEMAN
+172.20.15.233/32		 #JEAN CARLOS MARQUINA
+172.20.15.253/32		 #IRAIDA PUENTES
+172.20.12.25/32			 #LUIS BARAZARTE
+172.20.15.182/32		 #EDGAR MARTINEZ
+172.20.12.22/32			 #ELISA ARAUJO
+172.20.12.23/32			 #ENDRY ORTEGA
+172.20.12.24/32			 #SABRINA MICHELANGELI LUGO
+172.20.15.5/32			 #ILDA CONTRERAS
+172.20.12.161/32		 #CARLET BORGES MARTINEZ
+172.20.14.166/32		 #MONICA ARAUJO ROMERO
+172.20.15.3/32			 #VIRGINIA ALVAREZ
+172.20.14.240/32		 #WILLIAM HERRERA
+172.20.15.38/32			 #ANALLIVIS JAIMES
+172.20.14.22/32			 #ADRIANA GONZALEZ
+172.20.15.6/32			 #MARIBEL BARRERA
+172.20.14.247/32		 #ADA APONTE
+172.20.12.18/32			 #JUAN BALZA
+172.20.14.14/32			 #NEREYDA RAMOS
+172.20.14.11/32			 #MILET GARCIA
+172.20.13.55/32			 #IRAIMA GONZALEZ
+172.20.14.8/32			 #JOHANNA K. MARTINEZ
+172.20.14.113/32		 #MARIA VARGAS
+172.20.13.210/32		 #YOFRANK CARABALLO
+172.20.15.87/32			 #JEANETTE MENDOZA
+172.20.12.129/32		 #DAYANA MARTINEZ MEZA
+172.20.12.9/32			 #ASDRUBAL MONTILLA
+172.20.15.196/32		 #ROCIO OTALORA
+172.20.13.19/32			 #THAILY HERNANDEZ
+172.20.12.61/32			 #EDUARD RANGEL
+172.20.12.198/32		 #LUIS HIDROGO
+172.20.14.118/32		 #NESTOR RIVERO
+172.20.15.26/32			 #RAMON CASANOVA
+172.20.14.252/32		 #IVONNE COLMENARES
+172.20.15.146/32		 #HENDRICKX JACQUEZ
+172.20.15.145/32		 #YASBELY LOPEZ
+172.20.13.102/32		 #NANCY PARTIDA
+172.20.15.230/32		 #ALEXIS NIETO
+172.20.15.140/32		 #CESAR TORRES
+172.20.14.230/32		 #RICHARD CACERES
+172.20.13.109/32		 #HIENMARY RONDON ANDRADE
+172.20.13.85/32			 #MILAGROS MARTINEZ
+172.20.14.184/32		 #MARCELO GIL GONZALEZ
+172.20.12.27/32			 #VACANTE
+172.20.14.198/32		 #RAFAEL DABOIN
+172.20.13.151/32		 #WILMER MOLINA
+172.20.12.98/32			 #MARIA MERCEDES PRIETO
+172.20.14.233/32		 #LUIS PAREDES
+172.20.15.88/32			 #RICARDO MARTINEZ
+172.20.12.196/32		 #FREDDY ESCALONA
+172.20.12.195/32		 #AURA TELLERIA CARDOZO
+172.20.12.201/32		 #ELVIS AGUILAR
+172.20.13.158/32		 #ROSANGELA APONTE
+172.20.15.225/32		 #EDWUIN QUINTERO
+172.20.15.92/32			 #JOUBRAN DIAZ
+172.20.14.220/32		 #DIEGO MENDOZA
+172.20.14.251/32		 #EMILIA RAVELO
+172.20.12.99/32			 #DANIELA PEREZ
+172.20.15.31/32			 #NICOLAS YUMARE
+172.20.13.136/32		 #YEINER QUINTERO
+172.20.12.41/32			 #PABLO BRICEÑO
+172.20.15.4/32			 #MARIA EUGENIA MONTESINOS
+172.20.15.246/32		 #JOSE ANTONIO HERNANDEZ
+172.20.14.245/32		 #ZAIR MUNDARAY
+172.20.12.200/32		 #MARIA GONZALEZ LEGENDRE
+172.20.14.190/32		 #RAQUEL DEL ROCIO GASPERI
+172.20.14.42/32			 #GREGORY BENNERS
+172.20.15.162/32		 #EDGAR VILLEGAS
+172.20.12.67/32			 #VICNEY GOMEZ
+172.20.15.191/32		 #ALI J. GOMEZ FAGUNDEZ
+172.20.15.43/32			 #ZACARIAS ARANGUREN
+172.20.15.37/32			 #NORBERTO BRICEÑO
+172.20.14.241/32		 #VICELY GAMER
+172.20.12.34/32			 #MARIA DEL PILAR GABASA
+172.20.12.37/32			 #DAYLA GOMEZ GUARAMATO
+172.20.13.57/32			 #JULIO DIAZ
+172.20.7.57/32			 #ZULEIKA BONILLA
+172.20.14.223/32		 #RICHARD CARMONA
+172.20.12.194/32		 #JOSE ANTONIO TOVAR
+172.20.12.39/32			 #NATALY HERRERA
+172.20.12.199/32		 #FRAN RAMIREZ
+172.20.12.107/32		 #ADAN HERNANDEZ
+172.20.14.250/32		 #LIVIA MUÑOZ
+172.20.12.40/32			 #ALVARO CHAPARRO
+172.20.14.49/32			 #JOSE SUAREZ ZERPA
+172.20.15.234/32		 #CARLOS MARCIALES
+172.20.14.134/32		 #ALVARO BORJAS
+172.20.3.193/32			 #MENSAJERIA
+
+##########################################################################
+### UNIDAD ANALISIS TELOFONICO ###########################################
+##########################################################################
+172.20.15.220/32		 #OMAR TORREALBA
+172.20.12.73/32			 #ELOY CORRALES
+172.20.15.223/32		 #HAYDEE GOMEZ
+172.20.14.248/32		 #EDGAR SANCHEZ
+172.20.14.217/32		 #JOSE VALLADARES
+172.20.14.31/32			 #JUAN RUGELES
+172.20.14.239/32		 #DOUGLAS GIL
+172.20.14.46/32			 #SERVIDOR
+172.20.14.249/32		 #VACANTE
+172.20.14.36/32			 #RAMON DURAN
+172.20.15.211/32		 #EDWARD FLORES
+172.20.15.212/32		 #PEDRO RIOS
+172.20.14.104/32		 #ANGEL OROZCO
+172.20.14.105/32		 #GUILLERMO MARTINEZ
+172.20.14.103/32		 #ARGENIS GARCIA
+
+##########################################################################
+### UNAES ################################################################
+##########################################################################
+172.20.15.89/32			 #YANIXA BAEZ
+172.20.15.218/32		 #JOSE ZAMBRANO HERNANDEZ
+172.20.14.158/32		 #LUIS VELASCO
+172.20.15.65/32			 #SERVIDOR
+172.20.14.224/32		 #CARLOS ALMARZA
+172.20.15.131/32		 #JOSE BASTIDAS
+172.20.15.164/32		 #WILKER DAVILA
+172.20.15.136/32		 #CLEIVER URDANETA
+172.20.13.128/32		 #BORIS TORRES
+172.20.15.143/32		 #ALEXEY PEREZ
+172.20.13.127/32		 #ODIVIER CARMONA BASTARDO
+172.20.14.94/32			 #LUIS MASABET
+172.20.15.129/32		 #JOSEPH PERDOMO
+172.20.13.125/32		 #ABIMAEL FERNANDEZ
+172.20.15.180/32		 #MAURO LA SCALEA
+172.20.9.52/32			 #MARIO TERAN
+172.20.15.132/32		 #JUAN RIVAS ASCANIO
+172.20.14.56/32			 #ROSMER MENESES
+172.20.15.110/32		 #WILMER VELASCO
+172.20.15.133/32		 #LEARYENIS ALONZO
+172.20.15.141/32		 #DAISY RODRIGUEZ
+172.20.14.112/32		 #SAMUEL PAEZ
+172.20.13.130/32		 #THOMAS MARVAL
+
+##########################################################################
+### GESTION SOCIAL #######################################################
+##########################################################################
+192.168.10.198/32		 #YIMMI GONZALEZ
+192.168.11.230/32		 #INGRID OSPINO
+192.168.13.230/32		 #JAIRIMAR CAMACARO
+192.168.13.223/32		 #ROSANGELA DAMORE
+192.168.13.226/32		 #VILMANIA FARIAS
+192.168.13.224/32		 #CRISALIDA GAMARRA
+192.168.13.232/32		 #CAROLINA OLIVARES
+192.168.11.5/32			 #LUIS BASTARDO
+192.168.13.229/32		 #AMILCAR FIGUEROA
+192.168.13.225/32		 #AMBAR CONTRERAS
+192.168.11.7/32			 #INDIRA BASTARDO
+192.168.9.184/32		 #ALIS DURAN
+192.168.11.181/32		 #YARE D LA TORRE
+
+##########################################################################
+### DIRECCION PROYECTOS ESPECIALES #######################################
+##########################################################################
+192.168.12.25/32		 #Maria-Galeano
+
+##########################################################################
+### COORDINACION UNIDAD CONTRATANTE ######################################
+##########################################################################
+192.168.11.84/32		 #Carmenina-sgambati
+192.168.11.85/32		 #Beatriz-Pacheco
+
+##########################################################################
+### SEGURIDAD ############################################################
+##########################################################################
+192.168.12.133/32		 #Ego-Berbeci
+192.168.10.24/32		 #Maria-Barrios
+192.168.9.56/32			 #Ingrid Cordoba
+
+##########################################################################
+### DIRECCION FISCALIA SUPERIOR ##########################################
+##########################################################################
+172.20.12.18/32
+172.20.12.19/32 
+172.20.12.20/32 
+192.168.13.27/32
+
+##########################################################################
+### DIRECCION AMBIENTE ###################################################
+##########################################################################
+192.168.9.62/32			 #Teresita-Ortegano
+192.168.9.6/32			 #Juan-Macadan
+192.168.8.75/32			 #Ana-Paez
+192.168.8.179/32		 #Adriana-Martinez
+192.168.12.132/32		 #Ludiz-Munoz
+192.168.9.10/32			 #Marielena-Torrivilla
+192.168.8.191/32		 #Sonia-Rodriguez
+192.168.9.182/32		 #Carmen-Delgado2
+192.168.13.141/32		 #Ronald-Perez
+192.168.13.141/32		 #Alberto-Buitriago
+192.168.8.155/32		 #Xiomara Cuevas
+192.168.8.244/32		 #Fran-Garcia
+192.168.12.104/32		 #Belen-Reina
+192.168.12.130/32		 #Sumaya-Rojas
+192.168.13.144/32		 #Carlos-Diaz2
+192.168.9.18/32			 #Maribel-Monterrey
+192.168.13.143/32		 #William-Barrios
+192.168.8.134/32		 #Ninoska-Zambrano
+192.168.8.154/32		 #Bastardo-Subdirector
+192.168.8.2/32			 #Dir Ambiente
+192.168.13.136/32		 #Laptop-elecciones01
+192.168.13.137/32		 #Laptop-elecciones02
+192.168.13.139/32		 #Laptop-elecciones04
+192.168.13.140/32		 #Laptop-elecciones05
+192.168.13.142/32		 #Laptop-elecciones07
+192.168.12.154/32		 #Maria-Melillo2
+
+##########################################################################
+### DIRECCION CONTRA LAS DROGAS ##########################################
+##########################################################################
+192.168.11.105/32		 #Maria Renault
+
+##########################################################################
+### FISCALIA PRIMERA #####################################################
+##########################################################################
+172.20.12.5/32			 #Antonieta de Gregorio
+172.20.12.6/32			 #Gabriela Espinoza
+172.20.12.8/32			 #Zulayka Staback
+
+##########################################################################
+#### TABLES ##############################################################
+##########################################################################
+192.168.13.80/32		 #Act-Procesal
+192.168.13.84/32		 #Palella
+192.168.13.87/32		 #Mprieto
+192.168.13.86/32		 #Celis
+192.168.13.88/32		 #Rgonzalez
+192.168.13.89/32		 #Arogribuez
+192.168.13.90/32		 #Mrodrigueb
+192.168.13.91/32		 #NeiRodriguez
+192.168.13.92/32		 #Mberte
+192.168.13.93/32		 #Hgutierrez
+192.168.13.95/32		 #Argenia
+192.168.13.96/32		 #Duarte
+192.168.13.97/32		 #Stango
+192.168.13.98/32		 #Marcano 
+192.168.13.99/32		 #carpio
+192.168.13.100/32		 #Vasquez
+192.168.13.101/32		 #Rivas
+192.168.13.103/32		 #valero
+192.168.13.104/32		 #Dcordero
+192.168.13.105/32		 #Gioconda
+192.168.13.106/32		 #Lortega
+192.168.13.107/32
+192.168.13.108/32
+192.168.13.109/32
+192.168.13.110/32
+192.168.13.111/32
+192.168.13.112/32
+192.168.13.113/32
+192.168.13.114/32
+192.168.13.115/32
+192.168.13.117/32
+192.168.13.118/32
+192.168.13.119/32
+
+##########################################################################
+#### COMISION DE LA VERDAD ###############################################
+##########################################################################
+172.16.61.13/32
+172.16.61.52/32
+172.16.61.53/32
+172.16.61.54/32
+172.16.61.222/32
+172.16.61.223/32
+172.16.61.224/32
+172.16.61.225/32
+172.16.61.226/32
+172.16.61.227/32
+172.16.61.228/32
+172.16.61.229/32
+172.16.61.230/32
+172.16.61.231/32
+172.16.61.232/32
+172.16.61.233/32
+172.16.61.234/32
+172.16.61.235/32
+172.16.61.236/32
+172.16.61.237/32
+172.16.61.246/32
+172.16.61.247/32
+172.16.61.248/32
+172.16.61.249/32
+172.16.61.250/32
+172.16.61.251/32
+172.16.61.252/32
+172.16.61.253/32
+172.16.61.254/32
+
+##########################################################################
+### DIRECCION DEFENSA MUJER ##############################################
+##########################################################################
+172.16.99.49/32
+172.16.99.54/32
+172.16.99.158/32
+172.16.99.168/32
+172.16.99.195/32
+172.16.99.220/32
+172.16.99.231/32
+172.16.99.240/32		 #Madelein-Agreda
+172.16.99.245/32
+172.16.99.246/32
+172.16.99.247/32
+172.16.99.250/32
+
+
+##########################################################################
+### SEDE-FERRENQUIN ######################################################
+##########################################################################
+172.16.71.26/32			 #Iraima-Gutierrez-FA55AMC
+172.16.73.209/32		 #Jesus-Maita
+172.16.73.208/32		 #Jhonny-Medina
+172.16.73.211/32		 #Windy-Torres
+172.16.73.212/32		 #Ramon-Torres
+172.16.73.207/32		 #Jesica-Rodriguez
+172.16.73.210/32		 #Marcos-Palacios-FT76AMC
+172.16.73.37/32
+172.16.72.44/32			 #Norales-Rojas
+172.16.72.140/32		 #Ines-Dias
+172.16.72.141/32		 #Maria-Gracias
+172.16.76.49/32			 #JoseM-Jimenez
+172.16.76.105/32		 #carlys pimentel
+172.16.76.47/32
+172.16.81.0/24
+172.30.30.194/32
+172.30.30.85/32
+172.16.73.38/32
+172.16.68.49/32			 #Jhonny-Mendoza
+172.16.68.53/32			 #erick-Barrios
+172.16.68.39/32			 #Maria-Jose-Futrille-F77AMC
+172.16.66.40/32
+172.16.66.57/32			 #Jesica-Medina
+172.16.73.28/32
+172.16.75.39/32			 #Fuax-126
+172.16.69.30/32			 #Hector-Villasmil
+172.16.69.33/32
+#172.16.69.26/32		 #Sandra-Gonzalez
+172.16.69.19/32			 #Hector-Landaez
+172.16.69.52/32			 #Ana-Enriquez
+172.16.69.51/32			 #JoseO-Gonzalez
+172.16.73.44/32
+#172.16.61.47/32		 #sala-situacional
+172.16.61.65/32			 #Lucy-Rey
+172.16.60.2/32			 #Server
+172.16.60.40/32
+172.16.61.13/32
+172.16.61.159/32		 #Yuly-Gonzalez
+172.16.61.12/32
+172.16.61.11/32
+172.16.61.10/32
+172.16.61.58/32			 #Carlos-Quintero-Sarg2do
+172.16.61.128/32		 #Redes
+172.16.61.131/32
+172.16.69.48/32
+172.16.61.14/32
+172.16.61.15/32			 
+172.16.61.150/32
+172.16.61.149/32
+172.16.61.151/32		 #Ruth-Materano
+172.16.61.152/32		 #Tecnico-Soporte-Prueba
+172.16.61.155/32
+172.16.61.156/32
+172.16.61.157/32
+172.16.61.158/32
+172.16.61.16/32
+172.16.61.201/32
+172.16.61.202/32
+172.16.61.203/32
+172.16.61.204/32
+172.16.61.205/32		 #Hipolita-Villareal
+172.16.61.206/32		 #Omar-Paredes
+172.16.61.207/32		 #Rosalba-Thomsom
+172.16.61.208/32
+172.16.61.209/32
+172.16.61.212/32		 #Alejandro Morales
+172.16.61.213/32		 #Yoswe-Galindez
+172.16.61.214/32
+172.16.61.215/32		 #Escobar
+172.16.61.216/32		 #Gabriela Oropeza
+172.16.61.219/32		 #Escuela FN
+172.16.61.220/32		 
+172.16.61.222/32
+172.16.61.223/32
+172.16.61.224/32
+172.16.61.225/32
+172.16.61.226/32
+172.16.61.227/32
+172.16.61.228/32
+172.16.61.229/32
+172.16.61.23/32			 #sala-situacional
+172.16.61.230/32
+172.16.61.231/32
+172.16.61.232/32
+172.16.61.233/32
+172.16.61.234/32
+172.16.61.235/32
+172.16.61.236/32
+172.16.61.237/32
+172.16.61.24/32			 #sala-situacional
+172.16.61.246/32
+172.16.61.247/32
+172.16.61.248/32
+172.16.61.249/32
+172.16.61.250/32
+172.16.61.251/32
+172.16.61.252/32
+172.16.61.253/32
+172.16.61.254/32
+172.16.61.40/32			 #carlos Nuñez
+172.16.61.41/32			 #sala-situacional
+172.16.61.44/32			 #sala-situacional
+172.16.61.45/32			 #sala-situacional
+172.16.61.48/32
+172.16.61.49/32			 #yelitza
+172.16.61.51/32
+172.16.61.52/32
+172.16.61.53/32
+172.16.61.54/32
+172.16.61.55/32
+172.16.61.66/32
+172.16.62.19/32			 #Tais-Cortez-Faux-F57
+172.16.62.200/32		 #Adrian-Sanchez
+172.16.62.201/32		 #Jackson-Ledezma
+172.16.62.204/32
+172.16.62.206/32		 #Carmen-Gomez
+172.16.62.213/32		 #Briceida-Morales
+172.16.62.39/32			 #Jacob-Angarita
+172.16.62.34/32			 #Rafael-Villalobos-F122AMC
+172.16.62.32/32			 #Nairubi-Manzanilla
+172.16.62.211/32		 #Elizabeth-Rojas
+172.16.62.212/32
+172.16.63.127/32		 #Celie-Castillo
+172.16.63.132/32		 #Adriana-Reyes-f91
+172.16.63.133/32		 #Yalsy-Heredia-f91
+172.16.63.134/32		 #Maryelin-Urquia-f91
+172.16.63.135/32		 #Jose-Luis-Gonzalez-f91
+172.16.63.136/32		 #José-Poyo-f91
+172.16.63.137/32		 #Luis-Perdomo-f91
+172.16.63.36/32
+172.16.63.49/32			 #Pedro-Lopez-FT132
+172.16.63.50/32
+172.16.63.138/32		 #FA-Yalanis-Benavente
+172.16.63.139/32		 #FA-Marijose-Futrille
+172.16.63.140/32		 #FA-Carmen-Marquez
+172.16.63.141/32		 #FT-Rachelly-Barboza
+172.16.63.142/32		 #AbA-Patricia-Chirinos
+172.16.63.143/32		 #FA-Eduar-Narvaez
+172.16.63.144/32		 #Esp-Reina-Aguilar
+172.16.63.145/32		 #Inv-Nataly-Herrera
+172.16.63.146/32		 #Inv-Cesar-Torres
+172.16.63.148/32		 #Doris-Sanchez
+172.16.64.33/32
+172.16.64.19/32			 #Gimmy-Goite-FAux63NN
+172.16.65.27/32
+172.16.65.28/32			 #Quintin-Aular-Medico-Jefe
+172.16.65.30/32
+172.16.65.31/32
+172.16.65.32/32			 #Darelis-Morillo-Secretaria
+172.16.65.44/32
+172.16.65.46/32
+172.16.65.47/32			 #Darelis-Morales-Coordinadora
+172.16.66.52/32			 #ArturoJ-Ojeda
+172.16.65.51/32
+172.16.66.22/32			 #Marcos-Pinto
+172.16.66.27/32			 #Isaac Delgado
+172.16.66.34/32			 #Angel Mongez
+172.16.66.39/32			 #Oliver-Uribe
+172.16.66.41/32			 #Eusmari-Leon
+172.16.66.42/32			 #Atenas-Araque
+172.16.66.43/32			 #Desiree-Vitale
+172.16.66.49/32			 #niyulis-Arias
+172.16.66.51/32			 #Lucy-Correa
+172.16.67.27/32			 #Luis-Toledo
+172.16.67.200/32		 #Suleika-Diaz
+172.16.67.201/32		 #Argelia-Noguera
+172.16.67.26/32			 #Carlos-Ibarra
+172.16.67.25/32			 #Henry-Omaras
+172.16.67.23/32			 #Zahir-Cortez
+172.16.67.34/32			 #Rube-Sayago
+172.16.67.29/32			 #Libia-Mendoza
+172.16.67.47/32			 #Elvis-Rodriguez
+172.16.68.16/32			 #Julio-Azocar
+172.16.68.17/32			 #Israel-Paredes
+172.16.68.18/32			 #Tulio-Vasquez
+172.16.68.19/32
+172.16.68.41/32			 #Yosefine-Bravo
+172.16.68.43/32			 #Merving-Ortega
+172.16.68.44/32			 #Farik-Mora
+172.16.68.50/32			 #Ramon-Eduardo-Diamont
+172.16.68.51/32			 #Estefany Sosa
+172.16.68.200/32		 #Guillermo-Tirado
+172.16.69.28/32			 #Francisco-Lopez-FT-120AMC
+172.16.69.41/32			 #F86T
+172.16.69.49/32			 #Liduzca-Aguilera-FA36
+172.16.69.98/32			 #Magaly-Lopez-F84AMC
+172.16.69.150/32		 #Dayana-Castro
+172.16.69.151/32		 #Morella-Parra
+172.16.69.152/32		 #Jesus-Mujica
+172.16.69.56/32			 #thaixa-Santiago
+172.16.70.17/32			 #Andrimar-Ramirez
+172.16.70.18/32			 #Yatsoli-Lugo
+172.16.70.42/32			 #Marelis-Llovera
+172.16.70.38/32			 #Mariaf-Silva
+172.16.70.119/32
+172.16.70.46/32
+172.16.70.50/32			 #Jesenia-Cuevas
+172.16.70.140/32		 #Dani-Ortega
+172.16.71.27/32			 #Daynery-Pino
+172.16.71.28/32			 #Anabel-Solorzano
+172.16.71.35/32
+172.16.71.30/32
+172.16.71.37/32
+172.16.71.41/32
+172.16.71.50/32
+172.16.71.51/32
+172.16.72.19/32
+172.16.62.16/32
+172.16.62.44/32
+172.16.62.15/32
+172.16.62.14/32
+172.16.62.18/32			 #Osmel-Colmenarez
+172.16.62.43/32			 #Patricia-Egana
+172.16.62.36/32			 #Madelaine-Agreda
+172.16.64.36/32			 #Danielska
+172.16.64.39/32			 #Yulimer
+172.16.72.24/32
+172.16.73.200/32		 #Maria-Daboin
+172.16.73.206/32		 #Karen-Duncan
+172.16.73.41/32
+172.16.74.113/32		 #Soporte
+172.16.74.31/32			 #Alida-Cermeno-Faux23AMC
+172.16.74.33/32			 #Eiker Campeone
+172.16.74.47/32			 #Yoxari-Acosta
+172.16.74.150/32		 #Yenni-Leal
+172.16.74.152/32		 #Mailyn-Fuentes
+172.16.74.153/32		 #Mailin-Salazar
+172.16.74.154/32		 #Diana-Suarez-F119AMC
+172.16.74.155/32		 #Alvaro-Figurea-F119AMC
+172.16.74.156/32		 #Vladimir-Aguilera-F119AMC
+172.16.74.157/32		 #Marleyn-Gonzalez-F119AMC
+172.16.74.158/32		 #Juan-DeMacedo-F119AMC
+172.16.74.159/32		 #Mailyn-Marcano-F119AMC
+172.16.74.160/32		 #Francia-Gonzalez-F13AMC
+172.16.75.38/32			 #Alexander-Dordelli
+172.16.75.45/32			 #Monica-Trejo
+172.16.75.48/32			 #Jose-Martinez127
+172.16.76.34/32			 #Faux-F25AMC
+172.16.76.39/32			 #Elio-Benavides
+172.16.76.44/32			 #Faux-F25AMC
+172.16.76.42/32			 #FT-F25AMC
+172.16.76.35/32			 #Ocatvio-Teran
+172.16.76.46/32			 #FT50NN Harrinton
+172.16.80.104/32
+172.16.80.110/32
+172.16.80.63/32
+192.168.1.104/32
+172.16.80.184/32
+172.16.76.50/32
+172.16.71.40/32			 #Damian-Correa
+172.16.76.45/32			 #Waidalida-Rossi
+172.16.67.37/32	 		 #Jhonni-Mendes-F38NN-titular
+172.16.71.31/32			 #Morelia-Velasquez
+172.16.71.42/32			 #Grisel-Torres
+72.16.73.39/32			 #Jose-Graterol
+
+##########################################################################
+### SEDE-ANIMAS ##########################################################
+##########################################################################
+172.20.1.60/32			 #antivirus
+172.20.1.61/32			 #antivirus-animas
+172.20.13.193/32
+172.20.13.194/32
+172.20.14.61/32			 #vielma
+172.20.13.196/32
+172.20.13.191/32		 #Sussan-Ferreira
+172.20.15.154/32		 #Yajaira-Martinez-SecII-TecC
+172.20.13.246/32
+172.20.15.153/32		 #osw
+172.20.12.68/32			 #Pedro-Buitriago-FT25N
+172.20.12.217/32		 #Amarillys-Ruiz-FA$AMC
+172.20.13.171/32		 #Kevin-Parra-Soporte
+172.20.12.191/32		 #Lander-Marquina
+172.20.13.143/32		 #Alejandro-Peña
+172.20.13.126/32		 #maria eugenia montesino
+172.20.15.151/32
+172.20.13.52/32			 #Desousa portatil
+172.20.13.114/32		 #Katterine Harrintong-Fiscal 20N-PC
+172.20.13.119/32		 #Katterine Harrintong-Fiscal 20N-MAC
+172.20.13.10/32			 #Juan-Canelon
+172.20.13.11/32			 #Jose-Orta
+172.20.13.12/32			 #Francy-Avila
+172.20.14.81/32			 #Antony-Linares
+172.20.12.4/32			 #Adriana-Morales74AMC
+172.20.15.235/32
+172.20.13.25/32			 #Franlin-nieves
+172.20.14.143/32		 #regino-coba
+172.20.13.19/32			 #mercy-ramos-fiscal
+172.20.12.3/32			 #Jhont Rey
+172.20.15.246/32
+#172.20.12.8/32			 #F1contencioadm
+172.20.12.28/32			 #Gesenia-Rodriguez FT38AMC
+172.20.12.47/32			 #Regino-Cova FT
+172.20.14.19/32			 #Sub-DIR-FSUP
+172.20.14.56/32			 #Iraly
+172.20.14.57/32			 #Caridad-Animas
+172.20.14.59/32			 #Caridad-Animas2
+172.20.14.62/32			 #Jose-Urdaneta-HD
+172.20.13.42/32			 #Edwinkarl-Morales
+172.20.14.34/32			 #Zuly-Otero
+172.20.14.79/32			 #Griolinda-Morales
+172.20.14.80/32			 #Susan-Figueira
+172.20.12.238/32		 #MariaA-PerezOrtega
+172.20.14.46/32
+172.20.12.162/32		 #Ft-Juan-Tabares 
+172.20.12.163/32		 #Fax-Ana-Pescador
+172.20.14.44/32			 #Victor-Pacheco
+172.20.14.64/32
+172.20.14.37/32			 
+172.20.14.63/32
+172.20.1.25/32
+172.20.14.35/32			 #Anais-Rogriguez
+172.20.14.99/32			 #Ivone-Pistone-F54
+172.20.13.208/32		 #Peritaje1
+172.20.14.23/32			 #Telefonia-Laptop
+172.20.13.247/32		 #Karerina-Bornachera
+172.20.12.50/32			 #Mario-Aquino
+172.20.13.147/32		 #Rosi-FA20NN
+172.20.14.21/32			 #Yalimar-Ruiz-Forence
+172.20.13.144/32		 #Fuax-Marife-arrechedera
+172.20.12.167/32		 #Gabriela-Scort
+172.20.12.211/32		 #Jorge-Sayeth-FA3NN
+172.20.4.95/32			 #Uni-Urrieta-FAux11NN
+172.20.12.138/32		 #Adjunto-Mileida-Quiroz-F2
+172.20.12.135/32		 #Adjunto-Edwin-Carrera-F2
+172.20.12.43/32			 #Ftitular-Juan-bETANCOURT-f2
+172.20.13.102/32		 #Nancy-Partida-Criminalistica
+172.20.13.243/32		 #harrinton
+172.20.13.42/32			 #Edwinkarl-Morales-fiscal51
+172.20.13.198/32
+172.20.13.221/32
+
+##########################################################################
+### PARQUE CENTRAL #######################################################
+##########################################################################
+### RRHH
+172.16.107.150/32		 #Dir-Maria-Fernandez
+172.16.107.151/32		 #SubDir-Ada-Aponte
+172.16.107.183/32		 #JefeDiv-Solange-Malave
+172.16.107.184/32		 #JefeDep-5-Zulaima-Guzman
+172.16.107.185/32		 #JefeDep-6-Francisco-Reyes
+### Fideicomiso
+172.16.107.54/32		 #Ana-Urbina
+172.16.107.161/32		 #Javier-Tejidor
+172.16.107.81/32		 #Carolina-Zurita
+### Nomina
+172.16.107.168/32		 #Yajaira-Garcia
+172.16.107.171/32		 #Yulimar-Garcia
+172.16.107.169/32		 #Daniel-Sanchez
+172.16.107.172/32		 #Angelica-Prato
+172.16.107.167/32		 #Antonio-Quintero
+### Red Familia 
+172.16.93.195/32		 #Amarilis-Ruiz
+172.16.93.111/32		 #Jose-GonzalezSarmi
+172.16.92.71/32 
+172.16.92.72/32 
+172.16.92.192/32		 #Luis-Caruto
+172.16.92.182/32		 #Isis-Cabrera
+172.16.92.96/32			 #Irama-Gamboa
+172.16.92.214/32		 #Paula-Toro
+172.16.92.254/32		 #Jackson-Blanco
+
+##########################################################################
+### SEDE-PRINCIPAL #######################################################
+##########################################################################
+192.168.9.171/32
+192.168.12.112/32		 #Sair-Mundaray
+192.168.9.27/32			 #Beatriz-C
+172.16.61.152/32
+172.30.30.0/24
+192.168.10.143/32
+192.168.8.198/32		 #Mavis-Montezuma
+192.168.12.136/32		 #Ego
+192.168.9.26/32			 #Kevin-Alzualde-Medios
+192.168.12.95/32		 #Ego
+192.168.11.108/32		
+172.16.92.119/32		 #Beremig-Rodriguez
+192.168.9.215/32
+192.168.12.29/32		 #Carlos-Munoz
+172.16.16.156/32		
+172.16.16.131/32		 
+192.168.11.164/32		 #Keyvin-Piso11
+192.168.12.180/32
+192.168.12.87/32		 #Telf-Vice
+192.168.12.181/32
+192.168.11.165/32		 #Mauro-Urbina
+192.168.9.43/32			 #Hernan-Ocando-Piso11
+172.16.62.204/32		 #Carla-Ferreira
+172.16.70.50/32			 #Cuevas
+192.168.12.192/32
+192.168.9.142/32		 
+172.16.61.150/32
+172.16.61.156/32
+172.16.74.49/32			 #FA60AMC-Carolina
+172.16.74.33/32			 #Heyker-Campeones
+192.168.17.1-192.168.17.254/32
+192.168.12.37/32
+192.168.11.131/32		 #temp-andri
+192.166.13.51/32		 
+192.168.13.176/32		 #Seguridad
+192.168.12.86/32		 #Sandra-Rodriguez
+172.16.63.36/32
+172.16.92.66/32			 #Elba Chacín
+192.168.13.37/32
+192.168.13.173/32
+192.168.13.174/32
+192.168.14.175/32
+192.168.11.30/32
+192.168.11.11/32
+192.168.12.225/32
+172.16.61.212/32
+172.21.160.201/32		 #leman01
+172.21.160.202/32		 #leman02
+192.168.1.71/32
+192.168.8.239/32
+172.16.63.50/32
+172.16.62.19/32			 #Tais-Cortez-Faux-F57
+172.16.93.212/32		 #Teresa-Cedeño-Trabajadora-Social-Dir-Familia
+172.16.93.100/32 
+192.168.1.19/32			 #replica-DC
+172.16.16.98/32
+172.16.16.145/32		 
+192.168.13.252/32
+192.168.8.151/32		 #Maribel-Berroteran
+192.168.13.153/32
+172.16.30.200/32
+192.168.9.173/32
+172.16.97.3/32
+172.16.71.93/32			 #Oliver-Uribe
+172.16.61.216/32		 
+172.16.61.205/32 
+192.168.9.123/32		 #Reinaldo-Jurado
+192.168.1.41/32
+192.168.11.151/32 
+192.168.9.36/32			 #Rebeca-Ortega 
+192.168.13.53/32		 #Miguel-Arduino
+172.16.16.188/32		 
+192.168.13.16/32		 #Joel-Espinoza
+172.16.100.3/32			 #Servidor-TSJ-flagrancia
+172.16.100.25/32		 #Coordinador-flagrancia
+192.168.8.231/32		 #Marisela-perezca-Abo3-Inspeccion-y-diciplina
+192.168.9.184/32		 
+192.168.13.46/32		 
+192.168.1.29/32	 		 #VM-RoR
+192.168.1.14/32			 #Servidor-Seguridad
+192.168.8.144/32 
+192.168.8.112/32
+192.168.8.213/32		 #portatil-medios-tmp
+192.168.8.135/32		 #Dir-ADMINISTRACION
+192.168.13.13/32		 #Pruebavirtual
+192.168.13.131/32 
+192.168.13.41/32		 #Estrella-Velasco-despacho
+192.168.12.211/32
+192.168.5.240/32
+192.168.8.57/32			 #Beatriz-Pacheco
+192.168.13.129/32		 #Asistente despacho
+172.16.16.75/32			 #psqlnew
+172.16.16.89/32			 #redmine
+172.16.16.147/32		 #dba
+172.16.93.201/32		 #Dir-Familia
+172.16.93.171/32		 #Sub-Familia
+172.16.93.160/32		 #Terese-Cedeno
+172.16.93.100/32		 #Dilcio-Cordero
+192.168.12.53/32		 #Carlos-Escobar
+172.16.61.48/32			 #Johan
+192.168.8.159/32		 #Dalia-Hernandez
+192.168.13.20/32		 #ALberto-DelaCruz
+192.168.9.61/32			 #Angela-Aguilar-Dir
+192.168.9.172/32		 #Alfonsina 
+192.168.12.89/32  
+192.168.13.83/32  
+192.168.13.39/32  
+192.168.13.63/32		 #lopez
+192.168.1.33/32			 #server
+192.168.13.54/32		 
+192.168.13.47/32		 
+192.168.13.5/32			 #leidy-roa
+192.168.11.234/32		 #Sailu-Meza
+192.168.12.124/32		 #beatriz-Ortega
+192.168.12.253/32		 #yolibeth-guerrero
+192.168.12.178/32		 #Video-Conferencia
+192.168.9.81/32			 #Antonio-quintero
+192.168.9.54/32			 #carmen chavez
+192.168.11.144/32		 #maestro villegas
+192.168.11.10/32		 #maestro villegas
+192.168.8.95/32			 #Yajira-Garcia
+192.168.8.15/32			 #Melissa-Aristigueta
+192.168.8.166/32		 #Jackq
+192.168.12.243/32		 #Alejandro Castillo
+192.168.12.158/32		 #biblio
+192.168.13.1/32			 #Server
+172.16.76.46/32			 #FT50NN
+172.16.60.2/32			 #Server
+192.168.10.68/32		 
+192.168.12.249/32		 #videoconf
+192.168.1.60/32
+192.168.1.61/32
+172.16.16.167/32		 #Alares
+172.16.93.3/32			 #server
+192.168.12.100/32		 #secretaria-argelia-lover
+192.168.10.99/32		 
+172.16.67.29/32 		 #libia-mendoza
+172.16.92.172/32 		 #Wilmer-jimenez
+192.168.11.120/32 		 #Ronie-Salas
+172.17.1.26/32			 #servidor merida
+192.168.12.141/32		 #Glendy Mejias
+192.168.12.230/32		 #Octavia Ron
+192.168.9.22/32			 #indira-Rodriguez
+192.168.11.74/32 
