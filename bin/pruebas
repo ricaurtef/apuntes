@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# stubs = empty function
+# Tratando de entender "Test".
+# Se ejecutan los ejercicios del libro.
+# Wish me luck!
+
+# if y su sintaxis
+
+#  if commands; then
+#     commands
+#  [elif commands; then
+#  commands...]
+#  [else
+#  commands]
+#  fi
+
+x=6
+if [ $x = 5 ]; then
+   echo "x equals 5."
+else
+   echo "x does not equal 5."
+fi
+
+FILE1=~/Documentos/apuntes/playground/file1.txt
+FILE2=~/Documentos/apuntes/playground/file2.txt
+
+# Forma 1 del comando "test"
+if test $FILE1 -ef $FILE2; then
+   echo "Same inode."
+else
+   echo "Not same inode."
+fi
+
+# Forma 2 del comando "test"
+if [ "$FILE1" -ef "$FILE2" ]; then
+   echo "Mismo inodo."
+else
+   echo "No mismo inodo."
+fi
+
+# Ejemplo 1: Expresiones para archivos
+
+FILE=~/.bashrc
+
+if [ -e "$FILE" ]; then
+   if [ -f "$FILE" ]; then
+      echo "$FILE is a regular file."
+   fi
+   if [ -d "$FILE" ]; then
+      echo "$FILE is a directory."
+   fi
+   if [ -r "$FILE" ]; then
+      echo "$FILE is readable."
+   fi
+   if [ -w "$FILE" ]; then
+      echo "$FILE is writable."
+   fi
+   if [ -x "$FILE" ]; then
+      echo "$FILE is executable/searchable."
+   fi
+else
+   echo "$FILE does not exist"
+   exit 1
+fi
+
+# Ejemplo 2: Expresiones para cadenas de texto
+ANSWER=no
+
+if [ -z "$ANSWER" ]; then
+   echo "There is no answer." >&2
+   exit 1
+else
+   # ANSWER=$(echo $ANSWER | tr [[:upper:]] [[:lower:]])
+   # ANSWER=$(echo ${ANSWER^^}) Para convertir a mayusculas
+   ANSWER=$(echo ${ANSWER,,})
+fi
+if [ "$ANSWER" == "yes"  ]; then
+   echo "The answer is YES."
+elif [ "$ANSWER" == "no" ]; then
+   echo "The answer is NO."
+elif [ "$ANSWER" == "maybe" ]; then
+   echo "The answer is MAYBE."
+else
+   echo "The answer is UNKNOWN."
+fi

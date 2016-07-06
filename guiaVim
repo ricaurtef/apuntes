@@ -53,6 +53,8 @@
     -':set incsearch *'is'*' activa la búsqueda incremental (realizar la
     búsqueda conforme vamos tecleando)
     -':set wrapscan' activa la búsqueda circular. Note: I hate this!!
+    -':set wrap' inserta saltos de líneas dinámicos.
+    -':set texwidth=ancho' fija el ancho de la línea.
 
   · Resumen:
     #Validar#
@@ -84,3 +86,10 @@
     ':' El último comando de línea de comandos.
     '_' Agujero negro.
     '=' Una expresión matemática.
+
+    No olvidar los comandos ":global y :normal"!
+    Sintáxis del comando ":global":
+    [rango]:g[lobal]/PatrónBúsqueda/comando.
+    Global solo acepta comandos del tipo :comando.
+    Para ejecutar comandos normales (que no empiecen por ":") podemos usar
+    el comando ":normal". Ejemplo: :normal dap.

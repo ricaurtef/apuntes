@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# This is my first script. (No it isn't! :P)
+
+echo 'Hello world!'

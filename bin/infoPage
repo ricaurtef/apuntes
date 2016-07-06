@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Programa para mostrar una pagina de informacion del sistema
+
+# Definicion de variables/constantes
+TITLE="System Information Report For: $HOSTNAME"
+CURRENT_TIME=$(date +"%x %r %Z")
+TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+
+# Definicion de funciones
+reportUpTime (){
+cat <<- _EOF_
+      <h2>System Uptime</h2>
+      <pre>
+	 $(uptime)
+      </pre>
+_EOF_
+   
+return
+}
+
+reportDiskSpace (){
+cat <<- _EOF_
+      <h2>Disk Space Utilization</h2>
+      <pre>
+	 $(df -h)
+      </pre>
+_EOF_
+
+return
+}
+
+reportHomeSpace (){
+cat <<- _EOF_
+      <h2>Top 5 Home Space Utilization</h2>
+      <pre>
+	 $(du -sh $HOME/* | sort -rh | head -n 5)
+      </pre>
+_EOF_
+
+return
+}
+
+cat <<- _EOF_
+<html>
+   <head>
+      <title>$TITLE</title>
+   </head>
+   <body>
+      <h1>$TITLE</h1>
+      <p>$TIME_STAMP</p>
+      <p>
+	 $(reportUpTime)
+	 $(reportDiskSpace)
+	 $(reportHomeSpace)
+      </p>
+   </body>
+</html>
+_EOF_
