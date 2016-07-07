@@ -2,8 +2,9 @@
 
 # Ejemplo 3: Expresiones para enteros
 
-INT=foo
+INT=-10
 
+echo "Ejemplo 3v1: "
 if [ -z "$INT" ]; then
    echo "INT is empty." >&2
    exit 1
@@ -22,4 +23,54 @@ else
    else
       echo "INT is odd."
    fi
+fi
+
+# Ejemplo 3: Expresiones para enteros.
+# Se agrega una regex para validar que la variable sea efectivamente un entero.
+# El ejemplo anterior falla si la variable no es un entero.
+
+echo "Ejemplo 3v2: "
+if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+   if [ $INT -eq 0 ]; then
+      echo "INT is zero."
+   else
+      if [ $INT -lt 0 ]; then
+	 echo "INT is negative."
+      else
+	 echo "INT is positive."
+      fi
+      if [ $((INT % 2)) -eq 0 ]; then
+	 echo "INT is even."
+      else
+	 echo "INT is odd."
+      fi
+   fi
+else
+   echo "INT is not an integer." >&2
+   exit 1
+fi
+
+# Ejemplo 3: Expresiones para enteros
+# Además de la regex se utiliza el comando compuesto (()) para evaluar
+# opreciones aritméticas de verdad "arithmetic truth tests".
+
+echo "Ejemplo 3v3"
+if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+   if (( INT == 0 )); then
+      echo "INT is zero."
+   else
+      if (( INT < 0 )); then
+	 echo "INT is negative."
+      else
+	 echo "INT is positive."
+      fi
+      if (( ((INT % 2)) == 0 )); then
+	 echo "INT is even."
+      else
+	 echo "INT is odd."
+      fi
+   fi
+else
+   echo "INT is not an integer." >&2
+   exit 1
 fi
