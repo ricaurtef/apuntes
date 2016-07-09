@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Ejemplo 4: Prueba con los operadores lógicos.
+# Se utilizarán los operadores AND, OR and NOT para construir expresiones
+# más complejas.
+# En este primer ejercicio se determinará si un valor entero está entre un
+# rango especificado de valores.
+
+MIN_VAL=1
+MAX_VAL=100
+
+INT=0
+
+if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+   if (( INT > MIN_VAL && INT < MAX_VAL )); then
+      echo "$INT is within $MIN_VAL and $MAX_VAL."
+   else
+      echo "$INT is out of range."
+   fi
+else
+   echo "INT is not an integer." >&2
+   exit 1
+fi
+
