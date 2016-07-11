@@ -12,7 +12,9 @@ reportUpTime (){
 cat <<- _EOF_
       <h2>System Uptime</h2>
       <pre>
-	 $(uptime)
+	 Since: $(uptime -s | sed -E \
+         's/^([0-9]{4})-([0-9]{2})-([0-9]{2})/\2-\3-\1/')
+         Total: $(uptime -p)
       </pre>
 _EOF_
    
@@ -31,13 +33,20 @@ return
 }
 
 reportHomeSpace (){
+echo "<h2>Top 5 Home Space Utilization</h2>"
+if [[ $(id -u) == 0 ]]; then
 cat <<- _EOF_
-      <h2>Top 5 Home Space Utilization</h2>
       <pre>
-	 $(du -sh $HOME/* | sort -rh | head -n 5)
+	 $(du -sh /home/* | sort -rh | head -n 5)
       </pre>
 _EOF_
-
+else
+cat <<- _EOF_
+      <pre>
+	 $(du -h $HOME | sort -rh | head -n 5)
+      </pre>
+_EOF_
+fi
 return
 }
 

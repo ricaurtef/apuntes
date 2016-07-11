@@ -9,7 +9,7 @@
 MIN_VAL=1
 MAX_VAL=100
 
-INT=0
+INT=30
 
 if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
    if (( INT > MIN_VAL && INT < MAX_VAL )); then
@@ -22,3 +22,17 @@ else
    exit 1
 fi
 
+# Ejemplo 4: Prueba con los operadores lógicos.
+# En este veremos el uso de la negación dentro la expresión y como también
+# puede construirse la función con "TEST"
+
+if [[ "$INT" =~ ^-?[0-9]+$ ]]; then
+   if [ ! \( $INT -ge $MIN_VAL -a $INT -le $MAX_VAL \) ]; then
+      echo "$INT is outside $MIN_VAL and $MAX_VAL."
+   else
+      echo "$INT is in range."
+   fi
+else
+   echo "INT is not an integer." >&2
+   exit 1
+fi

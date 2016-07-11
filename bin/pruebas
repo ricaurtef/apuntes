@@ -15,11 +15,11 @@
 #  commands]
 #  fi
 
-x=6
-if [ $x = 5 ]; then
-   echo "x equals 5."
+X=5
+if [ $X = 5 ]; then
+   echo "X equals 5."
 else
-   echo "x does not equal 5."
+   echo "X does not equal 5."
 fi
 
 FILE1=~/Documentos/apuntes/playground/file1.txt

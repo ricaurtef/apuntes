@@ -1,0 +1,76 @@
+#!/bin/bash
+
+read -p "Please enter an integer-> " int 
+
+# Ejemplo 3: Expresiones para enteros
+
+echo "Ejemplo 3v1: "
+if [ -z "$int" ]; then
+   echo "int is empty." >&2
+   exit 1
+fi
+
+if [ $int -eq 0 ]; then
+   echo "int is zero."
+else
+   if [ $int -lt 0 ]; then
+      echo "int is negative."
+   else
+      echo "int is positive."
+   fi
+   if [ $((int % 2)) -eq 0 ]; then
+      echo "int is even."
+   else
+      echo "int is odd."
+   fi
+fi
+
+# Ejemplo 3: Expresiones para enteros.
+# Se agrega una regex para validar que la variable sea efectivamente un entero.
+# El ejemplo anterior falla si la variable no es un entero.
+
+echo "Ejemplo 3v2: "
+if [[ "$int" =~ ^-?[0-9]+$ ]]; then
+   if [ $int -eq 0 ]; then
+      echo "int is zero."
+   else
+      if [ $int -lt 0 ]; then
+	 echo "int is negative."
+      else
+	 echo "int is positive."
+      fi
+      if [ $((int % 2)) -eq 0 ]; then
+	 echo "int is even."
+      else
+	 echo "int is odd."
+      fi
+   fi
+else
+   echo "int is not an integer." >&2
+   exit 1
+fi
+
+# Ejemplo 3: Expresiones para enteros
+# Además de la regex se utiliza el comando compuesto (()) para evaluar
+# opreciones aritméticas de verdad "arithmetic truth tests".
+
+echo "Ejemplo 3v3"
+if [[ "$int" =~ ^-?[0-9]+$ ]]; then
+   if (( int == 0 )); then
+      echo "int is zero."
+   else
+      if (( int < 0 )); then
+	 echo "int is negative."
+      else
+	 echo "int is positive."
+      fi
+      if (( ((int % 2)) == 0 )); then
+	 echo "int is even."
+      else
+	 echo "int is odd."
+      fi
+   fi
+else
+   echo "int is not an integer." >&2
+   exit 1
+fi

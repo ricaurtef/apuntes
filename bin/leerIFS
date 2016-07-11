@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Ejemplo de como modificar el IFS (Internal Field Separator).
+# Se tomará el contenido del /etc/passwd y separar sus campos.
+
+FILE=/etc/passwd
+
+read -p "Enter a username > " userName
+
+fileInfo=$(grep "^$userName:" $FILE)
+
+if [ -n "$fileInfo" ]; then
+   IFS=":" read user pw uid gid name home shell <<< "$fileInfo"
+   echo -e "User = '$user' \
+   \nUID = '$uid' \
+   \nGID = '$gid' \
+   \nFull name = '$(echo $name | cut -d ',' -f 1)' \
+   \nHome dir = '$home' \
+   \nShell = '$shell'"
+else
+   echo "No such user: $userName." >&2
+   exit 1
+fi

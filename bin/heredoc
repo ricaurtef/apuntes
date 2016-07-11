@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Prueba heredoc:
+# De acuerdo lo investigado, el indentado de un heredoc funciona si, y solo
+# si, este es realizado con tabuladores y no espacios en blanco. El
+# propósito de esta prueba, es verificar si eso es cierto.
+
+heredoc (){
+	cat <<- EOF
+		<html>
+			<head><title>Título</title></head>
+			<body>
+				<p/>echo "Este es cuerpo."
+			</body>
+		</html>
+	EOF
+	return
+}
+
+echo "Heredoc"
+heredoc
