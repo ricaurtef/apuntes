@@ -93,3 +93,17 @@
     Global solo acepta comandos del tipo :comando.
     Para ejecutar comandos normales (que no empiecen por ":") podemos usar
     el comando ":normal". Ejemplo: :normal dap.
+
+    El comando "~" afecta al carácter bajo el cursor poniéndolo en
+    mayúsculas si estaba en minúsculas y viceversa; no admite ámbito de
+    actuación, en modo visual afectará al texto seleccionado y con un
+    argumento numérico afectará a ese número de caracteres.
+
+    Los comandos "gu", "gU" y "g~" admiten un ámbito de actuación y
+    afectarán a todos los caracteres que se encuentren dentro del ámbito.
+    Ejemplo: gUw, colocará una palabra en mayúsculas.
+
+    SUMAR Y RESTAR: colocado el cursor sobre un múmero CTRL+A le sumará una
+    unidad (o el prefijo numérico que se haya tecleado) y CTRL+X se la
+    restará. Ejemplo: 8CTRL+A sumará 8 unidades al número sobre el que se
+    encuentre el cursor.
