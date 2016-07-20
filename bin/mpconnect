@@ -1,11 +1,38 @@
 #!/bin/bash
 
+DELAY=3
 
-read -p "Enter server Ip > " ip
+clear
+echo -e "Tipo de conexión \
+   \nA. ABA \
+   \nB. Metro \
+   \nC. Satelital \
+   \nQ. Salir"
+read -p "Introduzca tipo instalacion [A B C] > "
 
-if [[ "$ip" =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
-   echo "Ip válida."
-else
-   echo "Invalid input." >&2
-   exit 1
-fi
+until [[ $REPLY =~ [qQ] ]]; do
+   p=0
+   while [[ $p == 0 ]]; do
+      read -p "Enter server Ip > " ip
+      if [[ "$ip" =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
+         case $REPLY in
+            a|A)   echo "ABA: $ip "
+                   sleep $DELAY
+                   ;;
+            b|B)   echo "Metro: $ip "
+                   sleep $DELAY
+                   ;;
+            c|C)   echo "Satelital: $ip "
+                   sleep $DELAY
+                   ;;
+            [^qQ]*)   echo "Opción inválida"
+                      ;;
+         esac
+         p=1; REPLY=q
+      else
+         echo "Ip Inválida"
+         sleep $DELAY
+      fi
+   done
+done
+echo "Programa terminado"
