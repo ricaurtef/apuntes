@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Constante: indica la ruta al directorio donde se encuentra el sources.list
+SOURCESLIST="/etc/apt/sources.list"
+
+cd /etc/apt/
+
+# Validamos si existe el sources.list. Si existe lo renombramos y creamos uno
+# nuevo. 
+
+if [[ -e $SOURCESLIST ]]; then
+   mv sources.list sources.list.orig
+fi
+cat << EOF > sources.list.foo
+   deb http://repositorio.mp.gob.ve/debian jessie main contrib non-free
+   deb http://repositorio.mp.gob.ve/debian-security jessie/updates main contrib
+   ## Debian Jessie LTS
+   deb http://repositorio.mp.gob.ve/debian jessie-updates main contrib non-free"
+EOF
