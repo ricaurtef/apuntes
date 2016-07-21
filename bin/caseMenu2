@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# case-menu2: a menu driven system information program
+# this incorporates a until sentence.
+
+DELAY=4
+until [[ $REPLY =~ [qQ] ]]; do
+   clear
+   echo -e "Please Select: \
+      \nA. Display Uptime \
+      \nB. Display Disk Space \
+      \nC. Display System Information \
+      \nQ. Quit"
+   read -p "Enter selection [A, B, C or Q] > "
+
+   case $REPLY in
+      a|A)  echo "Hostname: $HOSTNAME"
+            uptime -p
+            sleep $DELAY
+            ;;
+      b|B)  df -h
+            sleep $DELAY
+            ;;
+      c|C)  cat /etc/os-release 
+            sleep $DELAY
+            ;;
+     [^qQ]*)    echo "Invalid entry"
+                sleep $DELAY
+            ;;
+   esac
+done
+echo "Program terminated."

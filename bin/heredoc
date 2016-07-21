@@ -3,7 +3,7 @@
 # Prueba heredoc:
 # De acuerdo lo investigado, el indentado de un heredoc funciona si, y solo
 # si, este es realizado con tabuladores y no espacios en blanco. El
-# propósito de esta prueba, es verificar si eso es cierto.
+# propósito de esta prueba es verificar si eso es cierto.
 
 heredoc (){
 	cat <<- EOF
