@@ -18,4 +18,3 @@ heredoc (){
 }
 
 echo "Heredoc"
-heredoc
