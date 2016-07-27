@@ -1,12 +1,17 @@
 #!/bin/bash
+
 # file_info: simple file information program
-PROGNAME=$(basename $0)
+
+#FUNCNAME=$(basename $0)
+
+file_info () {
 if [[ -e $1 ]]; then
-echo -e "\nFile Type:"
-file $1
-echo -e "\nFile Status:"
-stat $1
+   echo -e "\nFile Type:"
+   file $1
+   echo -e "\nFile Status:"
+   stat $1
 else
-echo "$PROGNAME: usage: $PROGNAME file" >&2
-exit 1
+   echo "$FUNCNAME: usage: $FUNCNAME file" >&2
+   return 1
 fi
+}

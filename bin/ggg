@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <title>System Information Report For: rubinho</title>
+   </head>
+   <body>
+      <h1>System Information Report For: rubinho</h1>
+      <p>Generated 27/07/16 02:40:22 pm VET, by rubinho</p>
+      <p>
+       <h2>System Uptime</h2>
+      <pre>
+ Since: 07-11-2016 00:33:24
+         Total: up 2 weeks, 2 days, 14 hours, 7 minutes
+      </pre>
+       <h2>Disk Space Utilization</h2>
+      <pre>
+ S.ficheros                              Tamaño Usados  Disp Uso% Montado en
+/dev/sda1                                  46G   6,1G   38G  14% /
+udev                                       10M    10M     0 100% /dev
+tmpfs                                     758M    27M  732M   4% /run
+tmpfs                                     1,9G   352M  1,6G  19% /dev/shm
+tmpfs                                     5,0M   4,0K  5,0M   1% /run/lock
+tmpfs                                     1,9G      0  1,9G   0% /sys/fs/cgroup
+/dev/sda6                                 868G   444G  380G  54% /home
+tmpfs                                     379M   4,0K  379M   1% /run/user/118
+tmpfs                                     379M    44K  379M   1% /run/user/1000
+172.30.30.84:/media/respaldos/peliculas   596G   548G   18G  97% /media/peliculas
+      </pre>
+ <h2>Top 5 Home Space Utilization</h2>
+      <pre>
+ 444G	/home/rubinho
+196G	/home/rubinho/pki
+136G	/home/rubinho/pki/autoregistro2-10.20.4.211-img
+91G	/home/rubinho/Vídeos
+73G	/home/rubinho/Documentos
+      </pre>
+      </p>
+   </body>
+</html>

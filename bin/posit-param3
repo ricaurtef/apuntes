@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# positional-parameters3 : script to demonstrate $* and $@
+
+print_params () {
+cat << EOF
+\$1 = $1
+\$2 = $2
+\$3 = $3
+\$4 = $4
+EOF
+}
+
+pass_params () {
+   echo -e "\n" '$* :'; print_params $*
+   echo -e "\n" '"$*" :'; print_params "$*"
+   echo -e "\n" '$@ :'; print_params $@
+   echo -e "\n" '"$@" :'; print_params "$@"
+}
+
+pass_params "word" "words with spaces"

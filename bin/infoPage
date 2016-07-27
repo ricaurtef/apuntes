@@ -2,10 +2,15 @@
 
 # Programa para mostrar una pagina de informacion del sistema
 
+
 # Definicion de variables/constantes
+PROGNAME=$(basename $0)
 TITLE="System Information Report For: $HOSTNAME"
 CURRENT_TIME=$(date +"%x %r %Z")
 TIME_STAMP="Generated $CURRENT_TIME, by $USER"
+interactive=
+filename=
+
 
 # Definicion de funciones
 reportUpTime (){
@@ -50,6 +55,12 @@ fi
 return
 }
 
+usage () {
+   echo "$PROGNAME: usage: $PROGNAME [-f file | -i]"
+   return
+}
+
+write_html_page () {
 cat <<- _EOF_
 <html>
    <head>
@@ -66,3 +77,62 @@ cat <<- _EOF_
    </body>
 </html>
 _EOF_
+return
+}
+
+# process command line options
+
+while [[ -n $1 ]]; do
+   case $1 in
+      -f | --file)              shift
+                                filename=$1
+                                ;;
+      -i | --interactive)       interactive=1
+                                ;;
+      -h | --help)              usage
+                                exit
+                                ;;
+      *)                        usage >&2
+                                exit 1
+                                ;;
+   esac
+   shift
+done
+
+# interactive mode
+
+if [[ -n $interactive ]]; then
+   while true; do
+      read -p "Enter name of output file: " filename
+      if [[ -e $filename ]]; then
+         read -p "'$filename' exists. Overwrite? [y/n/q] > "
+         case $REPLY in
+            y|Y)        break
+                        ;;
+            q|Q)        echo "Program terminated."
+                        exit
+                        ;;
+            *)          continue
+                        ;;
+         esac
+      elif [[ -z $filename ]]; then
+         continue
+      else
+         break
+      fi
+   done
+fi
+
+# output html page
+
+if [[ -n $filename ]]; then
+   if touch $filename && [[ -f $filename ]]; then
+      write_html_page > $filename
+   else
+      echo "$PROGNAME: Cannot write file '$filename'" >&2
+      exit 1
+   fi
+else
+   write_html_page
+fi
+
