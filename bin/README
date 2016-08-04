@@ -1,0 +1,10 @@
+Algoritmo:
+1. Debe solicitar el tipo de instalación: VPN, Metro, ABA-Metro
+2. Debe solicitar la red para la nueva sede.
+3. Debe solicitar nombre de la nueva sede.
+4. Debe instalar los paquetes necesarios para configurar los servicios:
+DHCP, DNS, Proxy.
+5. Debe instalar algunas herramientas para la administración del servidor.
+6. Editar y ejecutar reglas de iptables.
+7. Crear el usuario: asistente.
+8. Mostrar mensaje del estatus de culminación de configuración.
