@@ -1,0 +1,23 @@
+Characer Class       Description
+[:alnum:]            The alphanumeric characters; in ASCII, equivalent to
+                     [A-Za-z0-9]
+[:word:]             The same as [:alnum:], with the addition of the
+                     underscore character "_"
+[:alpha:]            The alphabetic characters; in ASCII, equivalent to
+                     [A-Za-z]
+[:blank:]            Includes the space an tab characters
+[:cntrl:]            The ASCII control codes; includes the ASCII characters
+                     0 through 31 and 127
+[:digit:]            The numerals 0 through 9
+[:graph:]            The visible characters; in ASCII, includes characters
+                     33 through 126
+[:lower:]            The lowercase letters
+[:punct:]            The punctuation characters; in ASCII, equivalent to
+                     [-!"#$%&'()*+,./:;<=>?@[\\\]_`{|}~]
+[:print:]            The printable chracters; all the characters in
+                     [:graph:] plus the space character
+[:space:]            The whitespace characters including space, tab,
+                     carriage return, newline, vertical tab, and form feed; in ASCII, equivalent to [ \t\r\n\v\f]
+[:upper:]            The uppercase characters
+[:xdigit:]           Characters used to express hexadecimal numbers; in
+                     ASCII, equivalent to [0-9A-Fa-F]
