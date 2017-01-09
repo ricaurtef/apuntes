@@ -1,51 +1,121 @@
-  Extracted from The Linux Command Line, by William E. Shotts, Jr.
+# The Linux Command Line
+   
+   "Freedom is a computer that is without secrets, one where everything
+   can be known if you care enough to find out."
 
-  Parte I: Learning the Shell comienza nuestra exploración del lenguaje
-  básico de la línea de comando, incluye cosas tales como la estructura de
-  los comandos, navegación del filesystem, edición desde la línea de
-  comando, y encontrar ayuda y documentación de los comandos.
+   "Graphical user interfaces make easy tasks easy, while command line
+   interfaces make difficult tasks possible."
 
-  Parte II: Configuration and the Environment cubre la edición de archivos
-  de configuración que controlan la operación de la computadora desde la
-  línea de comando.
+   Qué es el shell?
+   Command line = shell
+   El shell es un programa que toma comandos introducidos con el teclado y
+   se los pasa al sistema operativo para que los ejecute.
 
-  Parte III: Common Tasks and Essential Toools explora muchas de las
-  ordinarias tareas que son comunmente desempeñadas desde la línea de
-  comandos. Sistemas operativos tipo Unix, como Linux, contienen muchos
-  "clásicos" programas de línea de comando que son usados para llevar a
-  cabo poderosas operaciones sobre los datos.
+   Terminal emulator
+   Cuando se hace uso de la interfaz gráfica es necesario otro programa
+   para interactuar con el shell, este es conocido como "terminal
+   emulator".
+   
+   Virtual terminal
+   Incluso si no se tiene un terminal emulator instalado, varias sesiones
+   de terminal continuan ejecutándose detŕas del escritorio gráfico y son
+   llamadas "virtual terminals" or "virtual consoles".
 
-  Parte IV: Writing Shell Scripts introduce la programación en el shell,
-  una admitida rudimentaria, pero fácil de aprender, técnica para
-  automatizar muchas de las tareas comunes de computación. Aprendiendo la
-  programación en el shell, te familiarizarás con conceptos que pueden ser
-  aplicados a muchos otros lenguajes de programación.
+   Dato curioso sobre "/etc"
+   Host-specific system-wide configuration files There has been controversy
+   over the meaning of the name itself. In early versions of the UNIX
+   Implementation Document from Bell labs, /etc is referred to as the
+   etcetera directory, as this directory historically held everything that
+   did not belong elsewhere (however, the FHS restricts /etc to static
+   configuration files and may not contain binaries). Since the publication
+   of early documentation, the directory name has been re-designated in
+   various ways. Recent interpretations include backronyms such as
+   "Editable Text Configuration" or "Extended Tool Chest".
 
-  Shell: es un programa que toma los comandos del teclado y los pasa al
-sistema operativo para que los ejecute.
-  
-  Most commonly used characer classes.
-    [:alnum:] Any alphanumeric character
-    [:alpha:] Any alphabetic character
-    [:digit:] Any numeral
-    [:lower:] Any lowercase letter
-    [:upper:] Any uppercase letter
+   Qué son exactamente comandos?
+   Un comando puede ser una de 4 cosas:
+   -Un programa ejecutable. Dentro de esta categoría los programas pueden
+   ser binarios compilados o programas escritos en lenguaje de script.
+   Ejemplo: los comandos encontrados dentro de /usr/bin.
+   -Un comando escritro dentro del propio shell. Estos son llamados shell
+   builtins (órdenes internas del shell). Ejemplo: el comando cd o type.
+   -Un función del shell. Scripts miniatura que pueden ser incorporados en
+   el ambiente.
+   -Un alias. Un comando creado por el usuario a partir de otro u otros
+   comandos.
 
-    Examples:
-    [abc]*		    Any file beginning with either a, b, or c
-    backup.[0-9][0-9][0-9]  Any file beginning with backup. followed by
-			    exactly three numerals
-    [[:upper:]]*	    Any file beginning with an uppercase letter
-    [![:digit:]]*	    Any file not beginning with a numeral
-    *[[:lower:]123]	    Any file ending with a lowercase letter or the
-			    numerals 1, 2, or 3
-  Character ranges: if you are coming from another Unix-like environment
-  or have been reading some other books on this subject, you may have
-  encountered the [A-Z] or the [a-z] character range notations. These are
-  traditional Unix notations and worked in older versions of Linux as well.
-  They can still work, but you have to be very careful with them because
-  they will not produce the expected results unless properly configured.
-  For now, you should avoid using them and use character classes instead.
+   Standard Input, Output and Error
+   Manteniendo el tema Unix de que "todo es un archivo", programas como
+   "ls" realmente envían sus resultados a un fichero especial llamado
+   _standard output_ (a menudo expresado stdout) y sus mensajes de estado a
+   otro archivo llamdo _standard error (sterr)_. Por defecto, tanto
+   standard output y standard error son vinculados con la pantalla y no
+   guardados en un fichero en disco.
+   Adicionalmente, muchos programas toman entradas de un servicio llamado
+   _standard input (stin)_, el cual está, por defecto, vinculado al
+   teclado.
+   # Redirigiendo el standard error.
+      Redirigir el standard error carece de la facilidad de usar un
+      operador de redirección dedicado. Para redirigir el standard error
+      debemos referir a su "file descriptor". Un programa puede producir
+      salida en cualquiera de varios flujos de archivos numerados. Mientras
+      nos hemos referido a los primeros tres de estos flujos de archivo
+      como standard input, output y error, el shell los referencia
+      internamente como file descriptors 0, 1 y 2, respectivamente. El
+      shell provee una notación para redirigir archivos usando el número
+      del file descriptor. Dado que standard error es lo mismo que file
+      descriptor 2, podemos redirigir standard error con esta notación:
+      :~$ ls -l /bin/usr 2> ls-error
+      El file descriptor "2" es colocado inmediatamente antes del operador
+      de redirección para ejecutar la redirección del standard error al
+      archivo _ls-error_.
+   # Redirigiendo Standard Output and Standard Error a un archivo
+      Hay dos maneras de hacer esto. Primero, la manera tradicional, la
+      cual funciona con versiones antiguas del shell:
+      :~$ ls -l /bin/usr > ls-output 2>&1
+      nota: note que el orden de la redirección es significativo. La
+      redirección del standard error debe siempre ocurrir después de
+      redirigir standard output o no funciona.
+      Versiones recientes de bash proveen un segundo, más simplificado
+      método para ejecutar esta redirección combinada:
+      :~$ ls -l /bin/usr &> ls-outpt
+
+   wc--Print line, Word, and Byte Count.
+
+   Expansión
+   -Pathname expansion.
+   -Tilde (~) expansion.
+   -Arithmetic expansion.
+   $((expression)). Ejemplo: echo $((2+2))
+   Arithmetic expansion solo soporta enteros y puede ejecutar, entre otras:
+   adición (+), sustracción (-), multiplicación (*), división (/), modulo
+   (%), exponenciación (**).
+   -Brace expansion.
+   Patrones a ser expandidos por corchetes pueden contener una porción al
+   principio llamada "preámbulo" y otra en la cola llamada "postscript".
+   -Parameter expansion.
+   -Command substitution.
+
+   Quoting
+   Es un mecanismo para selectivamente suprimir indeseadas expansiones.
+   # Comillas dobles
+   Si colocas texto dentro de comillas dobles, todos los caracteres
+   utilizados por el shell pierden su significado especial y son tratados
+   como caracteres ordinarios. Las excepciones son $ (dollar sign), \
+   (backslash) and ` (back tick). Esto significa que la separación de
+   palabras, pathname expansion, tilde expansion y brace expansion son
+   suprimidas, pero parameter expansion, arithmetic expansion y command
+   substitution aún son llevadas a cabo.
+   Con comillas dobles podemos sobrellevar con nombres de archivos con
+   espacios en blanco embebidos:
+   :~$ ls -l "two words.txt"; al colocar entre comillas dobles, detenemos
+   la separación de palabras.
+   :~$ mv "two words.txt" two_words.txt
+   # Comillas simples
+   Si necesitamos suprimir todas las expansiones, usamos comillas simples
+   :~$ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
+
+   
 
   EXPRESIONES REGULARES
 
@@ -162,3 +232,8 @@ sistema operativo para que los ejecute.
     +- Coincide un elemento una o más veces: El + metacaracter es muy
     parecido a *, excepto que el requiere al menos una instancia de un
     elemento precedente.
+
+    Summary: date, cal, df, free, pwd, cd, ls, file, less, cp, mv, mkdir,
+    rm, ln, type, which, man, apropos, info, whatis, alias, help, cat,
+    sort, uniq, wc, grep, head, tail, tee, echo, history, clear, id, chmod,
+    umask, su, sudo, chown, chgrp, passwd
