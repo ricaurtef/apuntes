@@ -115,6 +115,16 @@
    Si necesitamos suprimir todas las expansiones, usamos comillas simples
    :~$ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
 
+   El ambiente
+   El shell mantiene un cuerpo de información durante nuestra sesión de
+   shell llamado "The enviroment". Los datos almacenados en el ambiente son
+   utilizados por los programas para determinar hechos acerca de nuestra
+   configuración.
+   El shell almacena dos tipos básicos de datos en el ambiente: las
+   variables de ambiente y las variables de shell. Adicionalmente a las
+   variables, el shell almacena data programatica, llamada: alias y
+   funciones de shell.
+
    
 
   EXPRESIONES REGULARES
@@ -236,4 +246,5 @@
     Summary: date, cal, df, free, pwd, cd, ls, file, less, cp, mv, mkdir,
     rm, ln, type, which, man, apropos, info, whatis, alias, help, cat,
     sort, uniq, wc, grep, head, tail, tee, echo, history, clear, id, chmod,
-    umask, su, sudo, chown, chgrp, passwd
+    umask, su, sudo, chown, chgrp, passwd, ps, top, jobs, bg, fg, kill,
+    killall, shutdown, printenv, set, export
