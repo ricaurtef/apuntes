@@ -39,7 +39,7 @@
    Ejemplo: los comandos encontrados dentro de /usr/bin.
    -Un comando escritro dentro del propio shell. Estos son llamados shell
    builtins (órdenes internas del shell). Ejemplo: el comando cd o type.
-   -Un función del shell. Scripts miniatura que pueden ser incorporados en
+   -Una función del shell. Scripts miniatura que pueden ser incorporados en
    el ambiente.
    -Un alias. Un comando creado por el usuario a partir de otro u otros
    comandos.
@@ -124,6 +124,41 @@
    variables de ambiente y las variables de shell. Adicionalmente a las
    variables, el shell almacena data programatica, llamada: alias y
    funciones de shell.
+   # Cómo es establecido el ambiente?
+   Cuando nos logueamos en el sistema, el programa bash inicia y lee una
+   serie de scripts de configuración llamados "startup files", los cuales
+   definen el ambiente por defecto compartido por todos los usuarios. Esto
+   es seguido por más startup files en nuestro home directory que definen
+   nuestro ambiente personal. La secuencia exacta depende del tipo de
+   sesión de shelll que haya sido iniciada.
+   # Login and Non-login Shells
+   Hay dos tipos de sesiones de shell: una login shell session y una
+   non-login shell session (sesión en la que se solicita datos de ingreso
+   y sesión en la que no se solicita datos de ingreso)
+   Una login shell session es una en la cual nos es solicitado nuestro
+   nombre de usuario y una contraseña; por ejemplo, cuando iniciamos una
+   virutal console session. Una non-login shell session típicamente ocurre
+   cuando lanzamos una terminal session en la GUI.
+   Una login shell session lee uno o más startup files:
+   /etc/profile      Un script de configuración global que aplica a todos
+                     los usuarios.
+   ~/.bash_profile   A startup file personal de un usuario. Puede ser
+                     usado para extender o anular configuraciones en el
+                     script de configuración global.
+   ~/.bash_login     Si ~/.bash_profile no es encontrado, bash intenta leer
+                     este script.
+   ~/.profile        Si ~/.bash_profile ni ~/.bash_login son encontrados,
+                     bash intenta leer este archivo. Este es el startup
+                     file por defecto de distribuciones basadas en Debian.
+   Una non-login shell session lee los startup files de la siguiente forma:
+   /etc/bash.bashrc  Un script de configuración global que aplica a todos
+                     los usuarios.
+   ~/.bashrc         A startup file personal de un usuario. Puede ser usado
+                     para extender o anular configuraciones en el script de
+                     configuración global.
+   Adicionalmente a leer los archivos mencionados anteriormente, una
+   non-login shell session hereda el ambiente de su proceso padre,
+   usualmente una login session.
 
    
 
