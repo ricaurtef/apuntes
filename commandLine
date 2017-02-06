@@ -18,19 +18,20 @@
    
    Virtual terminal
    Incluso si no se tiene un terminal emulator instalado, varias sesiones
-   de terminal continuan ejecutándose detŕas del escritorio gráfico y son
-   llamadas "virtual terminals" or "virtual consoles".
+   de terminal continuan ejecutándose detrás del escritorio gráfico y son
+   llamadas "virtual terminals" o "virtual consoles".
 
    Dato curioso sobre "/etc"
-   Host-specific system-wide configuration files There has been controversy
-   over the meaning of the name itself. In early versions of the UNIX
-   Implementation Document from Bell labs, /etc is referred to as the
-   etcetera directory, as this directory historically held everything that
-   did not belong elsewhere (however, the FHS restricts /etc to static
-   configuration files and may not contain binaries). Since the publication
-   of early documentation, the directory name has been re-designated in
-   various ways. Recent interpretations include backronyms such as
-   "Editable Text Configuration" or "Extended Tool Chest".
+   Host-specific system-wide configuration files.
+   There has been controversy over the meaning of the name itself. In early
+   versions of the UNIX Implementation Document from Bell labs, /etc is
+   referred to as the etcetera directory, as this directory historically
+   held everything that did not belong elsewhere (however, the FHS
+   restricts /etc to static configuration files and may not contain
+   binaries). Since the publication of early documentation, the directory
+   name has been re-designated in various ways. Recent interpretations
+   include backronyms such as "Editable Text Configuration" or "Extended
+   Tool Chest".
 
    Qué son exactamente comandos?
    Un comando puede ser una de 4 cosas:
