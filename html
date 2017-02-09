@@ -1,0 +1,105 @@
+# HTML
+
+   HTML es el lenguaje de marcado estándar para crear páginas web.
+   - HTML significa Hypertext Markup Language.
+   - HTML describe la estructura de las páginas web utilizando marcado.
+   - Los elementos HTML son los bloques de construcción de las páginas web.
+   - Los elementos HTML son representados por tags.
+   - Los tags HTML etiquetan pedazos de contendio tales como "cabeceras",
+     "párrafos", "tablas" y así sucesivamente.
+   - Los navegadores no muestran las etiquetas HTML, pero las usan para
+     representar el contenido de la página.
+
+## Un documento HTML simple
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Título</title>
+   </head>
+   <body>
+      <h1>Mi primera cabecera</h1>
+      <p>Mi primer parrafo</p>
+   </body>
+</html>
+
+## La declaración <!DOCTYPE>
+   La declaración <!DOCTYPE> representa el tipo de documento, y ayuda a los
+   navegadores a mostrar las páginas web correctamente.
+   Debe aparecer sólo una vez, al principio de la página (antes de
+   cualquier etiqueta HTML)
+   La declaración <!DOCTYPE> no es case sentive.
+   La declaración <!DOCTYPE> para HTML5 es:
+   <!DOCTYPE html>
+
+## Use etiquetas en minúsculas
+   Las etiquetas HTML no son case sensitive.
+   El estándar HTML5 no requiere etiquetas en minúsculas, pero el W3C
+   (World Wide Web Consortium) recomienda estas en HTML, y exige minúsculas
+   para tipos de documentos más estrictos como XHTML.
+
+## Elementos HTML vacíos
+   Elementos HTML sin contenido son llamados "elementos vacíos".
+   <br> es un elemento vacío sin etiqueta de cierre (<br> define un salto
+   de línea)
+   Elementos vacíos pueden ser cerrados en la etiqueta de apertura así:
+   <br />.
+   HTML5 no requiere que los elementos vacíos estén cerrados. Pero si
+   quieres una validación más estricta, o si necesitas hacer tu documento
+   legible para analizadores sintácticos, debes cerrar todos los elementos
+   HTML apropiadamente.
+
+## El atributo "lang"
+   El lenguaje de un documentos puede ser declarado en el tag <html>.
+   El lenguaje es declarado con el atributo "lang".
+   Declarar un lenguaje es importante para aplicaciones de accesibilidad
+   (lectores de pantalla) y motores de búsqueda.
+   <!DOCTYPE html>
+   <html lang="es-VE">
+      <body>
+      ...
+      </body>
+   </html>
+   Las dos primeras letras espedifican el lenguaje (es). Si hay un
+   dialecto, hay que usar dos letras más (VE)
+
+## El atributo "title"
+   Title como atributo de un elemento HTML es mostrado como un tooltip
+   cuando el mouse pasa sobre este.
+   <p title="I'm a tooltip">
+      Este es un párrafo.
+   </p>
+
+## Sugerencias
+   - El estándar HTML no requiere nombres de atributos en minúsculas.
+      W3C recomienda minúsculas en HTML, y exige minúsculas para documentos
+      más estrictos como XHTML.
+   - El estándar HTML no requiere comillas alrededor de los valores de los
+     atributos.
+      W3C recomienda comillas en HTML, y exige comillas para tipos de
+      documentos más estrictos como XHTML.
+      Usar comiilas es lo más común (especialmente si el valor contine
+      espacios en blanco). Omitir las comillas puede producir errores.
+      Simples o dobles? Comillas dobles alrededor del valor del atributo es
+      lo más común in HTML, pero comillas simples también pueden ser
+      usadas.
+      En ocasiones, el valor del atributo en sí contiene comillas dobles,
+      es necesario usar comillas simples:
+      <p title='Ruben "rubinho" Ricaurte'>, o viceversa:
+      <p title="Ruben 'rubinho' Ricaurte">
+
+## Atributos HTML
+   Abajo está un lista alfabética de algunos atributos a menudo usados en
+   HTML:
+
+   Atributo       Descripción
+   alt            Especifica un texto alternativo para una imagen, cuando
+                  la imagen no puede ser mostrada, así como también es
+                  usado por lectores de pantalla.
+   disabled       Especifica que un elemento input debería ser
+                  deshabilitado.
+   href           Especifica la URL (dirección web) para un link.
+   id             Especifica un id único para un elemento.
+   src            Especifica la fuente de una imagen.
+   style          Especifica un estilo de línea CSS para un elemento.
+   title          Especifica información extra acerca de un elemento
+                  (mostrada como tooltip)

@@ -1,0 +1,25 @@
+# GitLab
+
+   El título de un "issue" debería describir el estado deseado de un
+   sistema, por ejemplo: "Como administrador quiero remover sin recibir un
+   error" en vez de "El Administrador no puede eliminar usuarios".
+   Cuando estás listo para programar inicias una rama para el issue
+   derivada de la rama "master". El nombre de la rama debería empezar con
+   el nombre del issue, por ejemplo: "15-require-a-password-to-change-it".
+   Si tu abres un "merge request" pero no se lo asignas a nadie, es un
+   "Work In Progress" merge request. Estos son utilizados para discutir la
+   implementación propuesta pero no está listo para incluir en la rama
+   master aún. _Pro tip_: comienza el título de un merge request con:
+   "[WIP]" o "WIP:" para evitar que sea fusionada la rama antes de estar
+   lista.
+
+## Pipelines (tuberías)
+   Los pipelines son un grupo de compilaciones (builds) que se ejecutan en
+   etapas.  Todas las compilaciones (builds) en una etapa se ejecutan en
+   paralelo (si hay suficiente concurrencia de runners), y si todo resulta
+   bien, el pipeline se mueve a la siguiente etapa. Si uno de los builds
+   falla, la siguiente etapa no se ejecuta.
+
+## Builds (compilaciones)
+   Builds son ejecuciones individuales de jobs (trabajos). No se confunda
+   con build job o build stage.
