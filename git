@@ -1,0 +1,10 @@
+# Git
+
+## Rules for the patterns you can put in .gitignore
+   · Blank lines or lines starting with # are ignored.
+   · Standard glob patterns work.
+   · You can start patterns with a forward slash ( / ) to avoid recursivity.
+   · You can end patterns with a forward slash ( / ) to specify a directory.
+   · You can negate a pattern by starting it with an exclamation point ( ! ).
+   · You can also use two asterisks to match nested directories; a/**/z
+     would match a/z, a/b/z, a/b/c/z.
