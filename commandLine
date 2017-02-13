@@ -138,7 +138,7 @@
    y sesión en la que no se solicita datos de ingreso)
    Una login shell session es una en la cual nos es solicitado nuestro
    nombre de usuario y una contraseña; por ejemplo, cuando iniciamos una
-   virutal console session. Una non-login shell session típicamente ocurre
+   virtual console session. Una non-login shell session típicamente ocurre
    cuando lanzamos una terminal session en la GUI.
    Una login shell session lee uno o más startup files:
    /etc/profile      Un script de configuración global que aplica a todos

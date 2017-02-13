@@ -1,0 +1,40 @@
+# Docker
+   
+   Es un proyecto de código abierto que automatiza el despliegue de
+   aplicaciones dentro de contenedores de software.
+   "Docker containers wrap up a piece of software in a complete filesystem
+   that contains everything it needs to run: code, runtime, system tools,
+   system libraries - anything you can install on a server. This guarantees
+   that it will always run the same, regardless of the environment it is
+   running in."
+
+   - Linux container: es un método de virtualización a nivel de sistema
+   operativo para ejecutar múltiples sistemas linux aislados (contenedores)
+   en un host usando un solo kernel linux.
+   - Las metas fundamentales de las máquinas virtuales y los contenedores
+     son diferentes - el propósito de una máquina virtual es emular
+     completamente un ambiente externo, mientras el propósito de un
+     contenedor es hacer las aplicaciones portables y auto-contenidas.
+
+## Docker tools
+   - Swarm: manejador de clúster.
+   - Kitematic: GUI.
+   - Machine: command line utiliy.
+
+## Docker commands summary
+   - docker run <image-name>
+   - docker run --rm <image-name> (Borra el contenedor al salir)
+   - docker run -i -t <image-name> <command>
+   - docker run -i -t -h <hostname> <image-name> <command>
+   - docker run -i -t --name <new-container-name> <image-name> \
+      <command>
+   - docker ps [-a]
+   - docker inspect <container-name>
+   - docker inspect --format {{.NetworkSettings.IPAddress}} <container-name>
+   - docker diff <container-name> (Historial de archivos que han cambiado)
+   - docker logs <container-name> (Historial de todo lo que ha pasado en el
+     contenedor)
+   - docker images
+   - docker rm <container-name>
+   - docker rm -v $(docker ps -aq -f status=exited)
+
