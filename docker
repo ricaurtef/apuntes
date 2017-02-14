@@ -21,6 +21,15 @@
    - Kitematic: GUI.
    - Machine: command line utiliy.
 
+## Dockerfile instructions
+   - FROM (Al principio de cada Dockerfile)
+   - RUN
+   - COPY
+   - ENTRYPOINT (Manejará cada argumento dado al comando docker run)
+   - MAINTAINER <maintainer-name> <contact-info>
+      Ej: Ruben Ricaurte <ricaurtef@gmail.com>
+   - VOLUME
+
 ## Docker commands summary
    - docker run <image-name>
    - docker run --rm <image-name> (Borra el contenedor al salir)
@@ -37,4 +46,9 @@
    - docker images
    - docker rm <container-name>
    - docker rm -v $(docker ps -aq -f status=exited)
+   - docker build -t <base-image> .
+   - docker info
+   - docker commit <container-name> <repository-name>/<image-name>
+   - docker search <image-to-search> (Buscar una imagen en Docker Hub)
+   - docker pull <image-name>
 
