@@ -18,7 +18,7 @@
 
 ## Docker tools
    - Swarm: manejador de clúster.
-   - Kitematic: GUI.
+   - Kitematic: GUI (Windows/Mac).
    - Machine: command line utiliy.
 
 ## Dockerfile instructions
@@ -28,7 +28,14 @@
    - ENTRYPOINT (Manejará cada argumento dado al comando docker run)
    - MAINTAINER <maintainer-name> <contact-info>
       Ej: Ruben Ricaurte <ricaurtef@gmail.com>
+   - CMD
+   - ADD
+   - ENV
+   - EXPOSE
+   - ONBUILD
+   - USER
    - VOLUME
+   - WORKDIR
 
 ## Docker commands summary
    - docker run <image-name>
@@ -51,4 +58,8 @@
    - docker commit <container-name> <repository-name>/<image-name>
    - docker search <image-to-search> (Buscar una imagen en Docker Hub)
    - docker pull <image-name>
+   - docker history <image-name> Para ver las capas que componen la imagen.
 
+## Docker tips
+   Si quieres que un servicio o proceso inicie con el contenedor, este debe
+   ser lanzado desde una instrucción ENTRYPOINT o CMD.

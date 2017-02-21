@@ -5,9 +5,9 @@
    - HTML describe la estructura de las páginas web utilizando marcado.
    - Los elementos HTML son los bloques de construcción de las páginas web.
    - Los elementos HTML son representados por tags.
-   - Los tags HTML etiquetan pedazos de contendio tales como "cabeceras",
+   - Los tags HTML etiquetan pedazos de contenido tales como "cabeceras",
      "párrafos", "tablas" y así sucesivamente.
-   - Los navegadores no muestran las etiquetas HTML, pero las usan para
+   - Los navegadores no muestran los tags HTML, pero las usan para
      representar el contenido de la página.
 
 ## Un documento HTML simple
@@ -27,9 +27,8 @@
    navegadores a mostrar las páginas web correctamente.
    Debe aparecer sólo una vez, al principio de la página (antes de
    cualquier etiqueta HTML)
-   La declaración <!DOCTYPE> no es case sentive.
-   La declaración <!DOCTYPE> para HTML5 es:
-   <!DOCTYPE html>
+   La declaración <!DOCTYPE> no es case sensitive.
+   La declaración <!DOCTYPE> para HTML5 es: <!DOCTYPE html>
 
 ## Use etiquetas en minúsculas
    Las etiquetas HTML no son case sensitive.
@@ -49,7 +48,7 @@
    HTML apropiadamente.
 
 ## El atributo "lang"
-   El lenguaje de un documentos puede ser declarado en el tag <html>.
+   El lenguaje de un documento puede ser declarado en el tag <html>.
    El lenguaje es declarado con el atributo "lang".
    Declarar un lenguaje es importante para aplicaciones de accesibilidad
    (lectores de pantalla) y motores de búsqueda.
@@ -59,7 +58,7 @@
       ...
       </body>
    </html>
-   Las dos primeras letras espedifican el lenguaje (es). Si hay un
+   Las dos primeras letras especifican el lenguaje (es). Si hay un
    dialecto, hay que usar dos letras más (VE)
 
 ## El atributo "title"
@@ -77,10 +76,10 @@
      atributos.
       W3C recomienda comillas en HTML, y exige comillas para tipos de
       documentos más estrictos como XHTML.
-      Usar comiilas es lo más común (especialmente si el valor contine
+      Usar comillas es lo más común (especialmente si el valor contiene
       espacios en blanco). Omitir las comillas puede producir errores.
       Simples o dobles? Comillas dobles alrededor del valor del atributo es
-      lo más común in HTML, pero comillas simples también pueden ser
+      lo más común en HTML, pero comillas simples también pueden ser
       usadas.
       En ocasiones, el valor del atributo en sí contiene comillas dobles,
       es necesario usar comillas simples:
@@ -95,7 +94,7 @@
    alt            Especifica un texto alternativo para una imagen, cuando
                   la imagen no puede ser mostrada, así como también es
                   usado por lectores de pantalla.
-   disabled       Especifica que un elemento input debería ser
+   disabled       Especifica que un elemento input debería estar
                   deshabilitado.
    href           Especifica la URL (dirección web) para un link.
    id             Especifica un id único para un elemento.
@@ -103,3 +102,14 @@
    style          Especifica un estilo de línea CSS para un elemento.
    title          Especifica información extra acerca de un elemento
                   (mostrada como tooltip)
+
+## Elemento <head>
+   El elemento <head> es un contenedor para metadata. Metadata HTML son datos acerca del documento.
+   El elemento <head> es colocado entre la etiqueta <html> y la etiqueta <body>.
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <meta charset="UTF-8" />
+      </head>
+   </html>
+   Metadata típicamente define el título del documento, el conjunto de caracteres (charset), estilos, vínculos, scripts y otra metainformación.
